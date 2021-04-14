@@ -1,83 +1,3 @@
-#São Paulo Region (796000)
-#São Paulo (350000/50000 POPS)
-2450 = {
-	aristocrats = {
-		culture = brazilian
-		religion = catholic
-		size = 1000
-	}
-	bureaucrats = {
-		culture = brazilian
-		religion = catholic
-		size = 500
-	}
-	officers = {
-		culture = brazilian
-		religion = catholic
-		size = 500
-	}
-	clergymen = {
-		culture = brazilian
-		religion = catholic
-		size = 500
-	}
-	artisans = {
-		culture = brazilian
-		religion = catholic
-		size = 5500
-	}
-	soldiers = {
-		culture = brazilian
-		religion = catholic
-		size = 7500
-	}
-	farmers = {
-		culture = brazilian
-		religion = catholic
-		size = 15000
-	}
-	aristocrats = {
-		culture = afro_brazilian
-		religion = catholic
-		size = 500
-	}
-	artisans = {
-		culture = afro_brazilian
-		religion = catholic
-		size = 1000
-	}
-	soldiers = {
-		culture = afro_brazilian
-		religion = catholic
-		size = 3000
-	}
-	farmers = {
-		culture = afro_brazilian
-		religion = catholic
-		size = 3000
-	}
-	artisans = {
-		culture = tupinamba
-		religion = catholic
-		size = 2000
-	}
-	soldiers = {
-		culture = tupinamba
-		religion = catholic
-		size = 500
-	}
-	farmers = {
-		culture = tupinamba
-		religion = catholic
-		size = 4500
-	}
-	slaves = {
-		culture = afro_brazilian
-		religion = catholic
-		size = 5000
-		militancy = 2
-	}
-}
 #Itapeva (26000/17000 POPS)
 2306 = {
 	artisans = {
@@ -120,6 +40,69 @@
 		religion = catholic
 		size = 3500
 		militancy = 2
+	}
+}
+#Sao Paulo (252000/93000 POPS)
+2450 = {
+	aristocrats = {
+		culture = brazilian
+		religion = catholic
+		size = 1275
+	}
+	bureaucrats = {
+		culture = brazilian
+		religion = catholic
+		size = 125
+	}
+	officers = {
+		culture = brazilian
+		religion = catholic
+		size = 150
+	}
+	clergymen = {
+		culture = brazilian
+		religion = catholic
+		size = 550
+	}
+	artisans = {
+		culture = brazilian
+		religion = catholic
+		size = 1925
+	}
+	soldiers = {
+		culture = brazilian
+		religion = catholic
+		size = 1100
+	}
+	farmers = {
+		culture = brazilian
+		religion = catholic
+		size = 42900
+	}
+	clergymen = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 75
+	}
+	artisans = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 750
+	}
+	soldiers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 150
+	}
+	farmers = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 5000
+	}
+	slaves = {
+		culture = afro_brazilian
+		religion = catholic
+		size = 39000
 	}
 }
 #São José dos Campos rename to santos (200000/40000 POPS)

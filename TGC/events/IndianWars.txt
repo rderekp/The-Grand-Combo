@@ -188,7 +188,7 @@
 			any_pop = {
 				limit = {
 					has_pop_culture = apache
-					NOT = { location = { state_id = 130 } }
+					NOT = { location = { region = USA_129 } }
 				}
 				militancy = -10
 				consciousness = -10
@@ -269,7 +269,7 @@
 		}
 
 		mean_time_to_happen = {
-			months = 16
+			months = 48
 		}
 
 		option = {
@@ -318,7 +318,7 @@
 		}
 
 		mean_time_to_happen = {
-			months = 120
+			months = 60
 		}
 
 		# Peace at last
@@ -328,7 +328,7 @@
 			any_pop = {
 				limit = {
 					has_pop_culture = seminole
-					NOT = { location = { state_id = 130 } }
+					NOT = { location = { region = USA_129 } }
 				}
 				militancy = -10
 				consciousness = -10
@@ -347,7 +347,7 @@
 			any_pop = {
 				limit = {
 					has_pop_culture = seminole
-					NOT = { location = { state_id = 130 } }
+					NOT = { location = { region = USA_129 } }
 				}
 				militancy = -10
 				consciousness = -10
@@ -431,7 +431,7 @@
 		}
 
 		mean_time_to_happen = {
-			months = 120
+			months = 60
 		}
 
 		option = {
@@ -440,7 +440,7 @@
 			any_pop = {
 				limit = {
 					has_pop_culture = seminole
-					NOT = { location = { state_id = 130 } }
+					NOT = { location = { region = USA_129 } }
 				}
 				militancy = -10
 				consciousness = -10
@@ -483,7 +483,6 @@
 				limit = {
 					OR = {
 						tag = SPA
-						tag = SPC
 						tag = IBR
 					}
 					exists = yes

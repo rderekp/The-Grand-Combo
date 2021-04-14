@@ -46,6 +46,14 @@ vassal = {
 	start_date = 1860.1.1
 	end_date = 1936.1.1
 }
+
+#France - Ait Abbas
+vassal = {
+	first = FRA
+	second = ABA
+	start_date = 1836.1.1
+	end_date = 1936.1.1
+}
 # #Liechenstein
 # vassal = {
 	# first = AUS
@@ -88,6 +96,13 @@ vassal = {
 	second = KHZ
 	start_date = 1836.1.1
 	end_date = 1844.1.1
+}
+#Persia - Khorasan
+substate = {
+	first = PER
+	second = KHR
+	start_date = 1836.1.1
+	end_date = 1849.1.1
 }
 #Other Kurdistan
 vassal = {
@@ -243,6 +258,48 @@ vassal = {
 	second = NOR
 	start_date = 1815.11.9
 	end_date = 1905.1.1
+}
+#Austria - Parma
+vassal = {
+	first = AUS
+	second = PAR
+	start_date = 1815.11.9
+	end_date = 1848.1.1
+}
+#Austria - Modena
+vassal = {
+	first = AUS
+	second = MOD
+	start_date = 1815.11.9
+	end_date = 1848.1.1
+}
+#Austria - Lucca
+vassal = {
+	first = AUS
+	second = LUC
+	start_date = 1815.11.9
+	end_date = 1848.1.1
+}
+#Austria - Tuscany
+vassal = {
+	first = AUS
+	second = TUS
+	start_date = 1815.11.9
+	end_date = 1848.1.1
+}
+#Prussia - Poznan
+substate = {
+	first = PRU
+	second = PZN
+	start_date = 1815.11.9
+	end_date = 1848.1.1
+}
+#Russia - Congress Poland
+substate = {
+	first = RUS
+	second = CPL
+	start_date = 1815.11.9
+	end_date = 1867.1.1
 }
 #Russia - Transcaucasia Namestnik
 substate = {

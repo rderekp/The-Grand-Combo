@@ -75,7 +75,6 @@ political_decisions = {
 			NOT = {
 				is_culture_group = american_cultures
 				tag = FRA
-				tag = BOR
 			}
 			war_with = USA
 			USA = {
@@ -1191,5 +1190,54 @@ political_decisions = {
 				relation = { who = USA value = 100 }
 			}
 		}
+	}
+	#UKY
+	#Kentucky rejoin USA
+	UKY_join_USA = {
+		picture = liberty_enlightening_the_world
+		potential = {
+			tag = UKY
+			has_global_flag = american_civil_war_has_happened
+			USA = { war = no exists = yes }
+			OR = {
+				CSA = { exists = no }
+				CSA = { has_country_flag = declined_kentucky }
+			}
+			NOT = { CSA = { in_sphere = USA } }
+			NOT = { has_country_flag = join_USA }
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			USA = { country_event = 16401 }
+			set_country_flag = join_USA
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	#Kentucky join CSA
+	UKY_join_CSA = {
+		picture = liberty_enlightening_the_world
+		potential = {
+			tag = UKY
+			has_global_flag = american_civil_war_has_happened
+			CSA = { war = no exists = yes }
+			NOT = { has_country_flag = join_CSA }
+			NOT = { CSA = { in_sphere = USA } }
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			CSA = { country_event = 16401 }
+			set_country_flag = join_CSA
+		}
+
+		ai_will_do = { factor = 1 }
 	}
 }

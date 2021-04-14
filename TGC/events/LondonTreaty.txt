@@ -31,19 +31,11 @@ country_event = {
 			country_event = 36713
 			}
 		relation = { who = ENG value = 150 }
-		random_country = {
-			limit = { tag = FRA }
-			relation = { who = NET value = 150 }
-		}
-		random_country = {
-			limit = { tag = BOR }
-			relation = { who = NET value = 150 }
-		}
+		relation = { who = NET value = 150 }
 		any_greater_power = {
 			limit = {
 				capital_scope = { continent = europe }
 				NOT = { tag = ENG }
-				NOT = { tag = BOR }
 				NOT = { tag = FRA }
 				NOT = { tag = BEL }
 				NOT = { tag = THIS }
@@ -74,10 +66,6 @@ country_event = {
 					tag = ENG
 					AND = {
 						tag = FRA
-						NOT = { NET = { has_country_flag = FRA_willem_i_alliance } }
-					}
-					AND = {
-						tag = BOR
 						NOT = { NET = { has_country_flag = FRA_willem_i_alliance } }
 					}
 					AND = {
@@ -142,19 +130,11 @@ country_event = {
 			country_event = 36713
 			}
 		relation = { who = ENG value = 150 }
-		random_country = {
-			limit = { tag = FRA }
-			relation = { who = NET value = 150 }
-		}
-		random_country = {
-			limit = { tag = BOR }
-			relation = { who = NET value = 150 }
-		}
+		relation = { who = FRA value = 150 }
 		any_greater_power = {
 			limit = {
 				capital_scope = { continent = europe }
 				NOT = { tag = ENG }
-				NOT = { tag = BOR }
 				NOT = { tag = FRA }
 				NOT = { tag = BEL }
 				NOT = { tag = THIS }
@@ -178,11 +158,6 @@ country_event = {
 		prestige = -20
 		relation = { who = ENG value = 50 }
 		relation = { who = NET value = 150 }
-		381 = { remove_core = BEL }
-		3313 = { remove_core = BEL }
-		3411 = { remove_core = BEL }
-		397 = { remove_core = BEL }
-		3384 = { remove_core = BEL }
 		random_owned = {
 			limit = { LUX = { exists = no } }
 			398 = { remove_core = LUX }
@@ -192,17 +167,26 @@ country_event = {
 			limit = {
 				OR = {
 					region = NET_375
+					region = NET_378
 					region = NET_379
-					region = NET_381
+					region = NET_382
 					region = NET_385
+					province_id = 381
 					province_id = 397
-					province_id = 3384
+					province_id = 3313
+					province_id = 3411
 				}
 			}
+			remove_core = BEL
 			secede_province = NET
 		}
 		NET = { country_event = 36712 }
 		set_country_flag = signed_treaty_of_london
+		set_country_flag = neutrality_candidate
+		add_country_modifier = {
+			name = neutrality
+			duration = -1
+		}
 		ai_chance = {
 			factor = 80
 		}
@@ -284,7 +268,9 @@ country_event = {
 		prestige = 5
 		LUX_397 = { remove_core = NET }
 		BEL = { all_core = { remove_core = NET } }
-		NET_381 = { add_core = LBG }
+		381 = { add_core = LBG }
+		3313 = { add_core = LBG }
+		3411 = { add_core = LBG }
 		release_vassal = LBG
 		random_country = {
 				limit = {
@@ -312,7 +298,6 @@ country_event = {
 						tag = GCF
 						tag = GER
 						tag = FRA
-						tag = BOR
 						tag = AUS
 						tag = KUK
 						tag = NET
@@ -343,43 +328,28 @@ country_event = {
 	option = {
 		name = "EVTOPTA36713"
 		prestige = -20
-		387 = { remove_core = BEL remove_core = NET } #French Part
-		392 = { remove_core = BEL remove_core = NET }
-		393 = { remove_core = BEL remove_core = NET }
-		394 = { remove_core = BEL remove_core = NET }
-		3386 = { remove_core = BEL remove_core = NET }
-		random_owned = {
-			limit = { exists = BOR }
-				387 = { add_core = BOR secede_province = BOR }
-				392 = { add_core = BOR secede_province = BOR }
-				393 = { add_core = BOR secede_province = BOR }
-				394 = { add_core = BOR secede_province = BOR }
-				3386 = { add_core = BOR secede_province = BOR }
-				}
-		random_owned = {
-			limit = { exists = FRA }
-				387 = { add_core = FRA secede_province = FRA }
-				392 = { add_core = FRA secede_province = FRA }
-				393 = { add_core = FRA secede_province = FRA }
-				394 = { add_core = FRA secede_province = FRA }
-				3386 = { add_core = FRA secede_province = FRA }
-				}
-		381 = { remove_core = BEL remove_core = NET add_core = LBG secede_province = LBG } #Prussian Part
-		3313 = { remove_core = BEL remove_core = NET add_core = LBG secede_province = LBG }
+		387 = { remove_core = BEL remove_core = NET add_core = FRA secede_province = FRA } #French Part
+		393 = { remove_core = BEL remove_core = NET add_core = FRA secede_province = FRA }
+		394 = { remove_core = BEL remove_core = NET add_core = FRA secede_province = FRA }
+		3386 = { remove_core = BEL remove_core = NET add_core = FRA secede_province = FRA }
+		3462 = { remove_core = BEL remove_core = NET add_core = FRA secede_province = FRA }
+		3463 = { remove_core = BEL remove_core = NET add_core = FRA secede_province = FRA }
+		381 = { remove_core = BEL remove_core = NET add_core = LBG add_core = PRU secede_province = PRU } #Prussian Part
+		3313 = { remove_core = BEL remove_core = NET add_core = LBG add_core = PRU secede_province = PRU }
 		3411 = { remove_core = BEL add_core = LBG secede_province = NET } #Dutch Unconditional Part
 		PRU = { inherit = MRN } #Prussia inherits Neutral Moresnet
 		3320 = { add_core = PRU }
-		PRU = { create_vassal = LBG diplomatic_influence = { who = LBG value = 400 } } #Prussia puppets Limburg (should be reannexed with NGF formation)
-		397 = { remove_core = NET secede_province = LUX }
-		395 = { remove_core = BEL remove_core = NET add_core = LUX secede_province = LUX }
-		398 = { remove_core = BEL remove_core = NET secede_province = LUX }
-		3318 = { remove_core = BEL remove_core = NET secede_province = LUX }
-		3412 = { remove_core = BEL remove_core = NET add_core = LUX secede_province = LUX }
-		PRU = { create_vassal = LUX diplomatic_influence = { who = LUX value = 400 } } #Prussia puppets Luxemburg
+		392 = { remove_core = BEL remove_core = NET add_core = LUX add_core = PRU secede_province = PRU }
+		397 = { remove_core = NET add_core = PRU secede_province = PRU }
+		395 = { remove_core = BEL remove_core = NET add_core = LUX add_core = PRU secede_province = PRU }
+		398 = { remove_core = BEL remove_core = NET add_core = PRU secede_province = PRU }
+		3318 = { remove_core = BEL remove_core = NET add_core = PRU secede_province = PRU }
+		3412 = { remove_core = BEL remove_core = NET add_core = LUX add_core = PRU secede_province = PRU }
 		390 = { remove_core = BEL remove_core = NET secede_province = FLA } #British Part, NOTE: not in order so the capital gets placed in this province, DONT put province IDs in order
 		388 = { remove_core = BEL remove_core = NET secede_province = FLA }
 		389 = { remove_core = BEL remove_core = NET secede_province = FLA }
 		3384 = { remove_core = BEL add_core = FLA secede_province = FLA }
+		3461 = { remove_core = BEL remove_core = NET secede_province = FLA }
 		ENG = { create_vassal = FLA diplomatic_influence = { who = FLA value = 400 } } #British puppet Antwerpen Freestate
 		FLA = { government = colonial_company }
 
@@ -539,7 +509,6 @@ country_event = {
 				NOT = {
 					OR = {
 						tag = FRA
-						tag = BOR
 						tag = ENG
 					}
 				}
@@ -547,14 +516,7 @@ country_event = {
 			relation = { who = BEL value = 20 }
 		}
 		relation = { who = ENG value = 150 }
-		random_owned = {
-			limit = { exists = FRA }
-			owner = { relation = { who = FRA value = 150 } }
-		}
-		random_owned = {
-			limit = { exists = BOR }
-			owner = { relation = { who = BOR value = 150 } }
-		}
+		relation = { who = FRA value = 150 }
 		add_country_modifier = {
 			name = no_more_war
 			duration = 730
@@ -628,14 +590,7 @@ country_event = {
 			}
 		}
 		relation = { who = ENG value = -50 }
-		random_owned = {
-			limit = { exists = FRA }
-			owner = { relation = { who = FRA value = -50 } }
-		}
-		random_owned = {
-			limit = { exists = BOR }
-			owner = { relation = { who = BOR value = -50 } }
-		}
+		relation = { who = FRA value = -50 }
 		add_country_modifier = {
 			name = no_more_war
 			duration = 730
@@ -660,7 +615,6 @@ country_event = {
 				NOT = {
 					OR = {
 						tag = FRA
-						tag = BOR
 						tag = ENG
 					}
 				}
@@ -673,25 +627,10 @@ country_event = {
 			type = free_allied_cores
 			months = 24
 		}
-		random_owned = {
-			limit = { exists = FRA }
-			owner = {
-				add_casus_belli = {
-					target = FRA
-					type = free_allied_cores
-					months = 24
-				}
-			}
-		}
-		random_owned = {
-			limit = { exists = BOR }
-			owner = {
-				add_casus_belli = {
-					target = BOR
-					type = free_allied_cores
-					months = 24
-				}
-			}
+		add_casus_belli = {
+			target = FRA
+			type = free_allied_cores
+			months = 24
 		}
 		ENG = {
 			diplomatic_influence = { who = BEL value = -100 }
@@ -840,16 +779,12 @@ country_event = {
 	option = {
 		name = "EVTOPTB36722"
 		relation = { who = FRA value = -400 }
-		relation = { who = BOR value = -400 }
 		ENG = {
-			diplomatic_influence = { who = BEL value = -100 }
-			relation = { who = BEL value = -100 }
+			diplomatic_influence = { who = BEL value = -200 }
+			relation = { who = BEL value = -200 }
 			leave_alliance = BEL
 		}
-		random_country = {
-			limit = { OR = { tag = FRA tag = BOR } exists = yes }
-			country_event = 36722
-			}
+		FRA = { country_event = 36722 }
 		ai_chance = {
 			factor = 30
 		}
@@ -901,10 +836,7 @@ country_event = {
 	picture = "treaty"
 
 	trigger = {
-		OR = {
-			tag = FRA
-			tag = BOR
-		}
+		tag = FRA
 		truce_with = BEL
 		has_country_flag = contesting_talleyrand
 		BEL = { has_recently_lost_war = yes }

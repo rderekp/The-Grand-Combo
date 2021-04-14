@@ -546,7 +546,7 @@ political_decisions = {
 			956 = { add_core = POL }
 			957 = { add_core = POL }
 			RUS_707 = { add_core = POL }
-			RUS_940 = { add_core = POL }
+			# RUS_940 = { add_core = POL } TODO
 		}
 		ai_will_do = {
 			factor = 1

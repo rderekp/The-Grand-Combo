@@ -17,7 +17,7 @@ party_issues = {
 	economic_policy = {
 
 		laissez_faire = {
-			max_tax = 0.5
+			max_tax = 0.75
 			factory_owner_cost = 0.25
 			factory_output = 0.1
 			import_cost = -0.25
@@ -1190,47 +1190,37 @@ party_issues = {
 		health_care = {
 			administrative = yes
 			next_step_only = yes
-
 			no_health_care = {
-				# No effect
 				allow = {
 					NOT = { has_country_flag = soc_reform_blocker }
 				}
 			}
-
 			trinket_health_care = {
-				global_population_growth = 0.001
-				administrative_multiplier = 1
+				administrative_multiplier = 2
 				global_immigrant_attract = 0.01
 				allow = {
 					NOT = { has_country_flag = soc_reform_blocker }
 					has_country_flag = medicine_invented
 				}
 			}
-
 			low_health_care = {
-				global_population_growth = 0.002
-				administrative_multiplier = 2
+				administrative_multiplier = 4
 				global_immigrant_attract = 0.02
 				allow = {
 					NOT = { has_country_flag = soc_reform_blocker }
 					has_country_flag = germs_invented
 				}
 			}
-
 			acceptable_health_care = {
-				global_population_growth = 0.003
-				administrative_multiplier = 3
+				administrative_multiplier = 6
 				global_immigrant_attract = 0.03
 				allow = {
 					NOT = { has_country_flag = soc_reform_blocker }
 					has_country_flag = gaslights_invented
 				}
 			}
-
 			good_health_care = {
-				global_population_growth = 0.004
-				administrative_multiplier = 4
+				administrative_multiplier = 8
 				global_immigrant_attract = 0.04
 				allow = {
 					NOT = { has_country_flag = soc_reform_blocker }
@@ -1242,39 +1232,35 @@ party_issues = {
 		school_reforms = {
 			next_step_only = yes
 			administrative = yes
-
 			no_schools = {
 				global_assimilation_rate = -0.002
 				allow = {
 					NOT = { has_country_flag = soc_reform_blocker }
 				}
 			}
-
 			low_schools = {
 				education_efficiency_modifier = 0.05
 				global_assimilation_rate = 0.002
 				global_immigrant_attract = 0.02
-				administrative_multiplier = 1
-				allow = {
-					NOT = { has_country_flag = soc_reform_blocker }
-				}
-			}
-
-			acceptable_schools = {
-				education_efficiency_modifier = 0.075
-				global_assimilation_rate = 0.005
-				global_immigrant_attract = 0.03
 				administrative_multiplier = 2
 				allow = {
 					NOT = { has_country_flag = soc_reform_blocker }
 				}
 			}
-
+			acceptable_schools = {
+				education_efficiency_modifier = 0.075
+				global_assimilation_rate = 0.01
+				global_immigrant_attract = 0.03
+				administrative_multiplier = 4
+				allow = {
+					NOT = { has_country_flag = soc_reform_blocker }
+				}
+			}
 			good_schools = {
 				education_efficiency_modifier = 0.1
-				global_assimilation_rate = 0.01
+				global_assimilation_rate = 0.02
 				global_immigrant_attract = 0.04
-				administrative_multiplier = 3
+				administrative_multiplier = 8
 				allow = {
 					NOT = { has_country_flag = soc_reform_blocker }
 					has_country_flag = biologism_invented

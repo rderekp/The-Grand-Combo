@@ -127,6 +127,8 @@ country_migration_target = {
 			government = democracy
 			government = presidential_dictatorship
 			government = hms_government
+			government = dominion
+			government = federal_democracy
 		}
 	}
 
@@ -160,6 +162,8 @@ country_migration_target = {
 			government = democracy
 			government = presidential_dictatorship
 			government = hms_government
+			government = dominion
+			government = federal_democracy
 		}
 	}
 }
@@ -309,6 +313,11 @@ migration_target = {
 	modifier = {
 		factor = 0.1
 		terrain = small_island
+	}
+	
+	modifier = {
+		factor = 0.03
+		terrain = caribbean_island
 	}
 
 	modifier = {

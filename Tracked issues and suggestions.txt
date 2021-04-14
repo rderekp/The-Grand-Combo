@@ -6,9 +6,7 @@
 
     # Annex Manchuria doesn't work
 
-    # Splendid Isolation is broken
-
-    # Options don't work when tag switching
+    # Options don't work when tag switching, probably unfixable people just shouldn't do this
 
     # Lease of Bergen is broken
 
@@ -16,8 +14,6 @@
     # Paris commune is wack in general
 
     # Bohemian question relies on Sudetenland state
-
-    # Renaming decisions for Benelux
 
     # Xinjiang to Turkestan
 
@@ -27,15 +23,11 @@
 
     # Switzerland should be excluded from German unification code (unless it has only its German parts left?)
 
-    # Everything concerning Belgium's states
-
     # Balkans adjecencies
 
     # Multiple issues with Switzerland partition related to different Italy tags
 
     # You can't germanize the dutch without ceding Metz and Wallonia to the French
-
-    # No renaming decision for Limburg
 
     # Western influences modifier remaining after westernizing
 
@@ -54,7 +46,7 @@
 
     # common\countries\NAN missing entirely
 
-    # provinces 3434-3452 have no pops
+    # Swiss partition fails to account for Neuchatel still existing
 
 ## Suggestions - Not including map suggestions which are tracked with images on the discord server
 

@@ -666,6 +666,9 @@ country_event = {
 		1186 = { add_core = RUS }
 		1188 = { add_core = RUS }
 		1190 = { add_core = RUS }
+		1208 = { add_core = RUS }
+		1189 = { add_core = RUS }
+		1185 = { add_core = RUS }
 	}
 }
 
@@ -3473,14 +3476,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB24600" #Truly, we have far surpassed the French.
 		prestige = 15
-		random_owned = {
-			limit = { exists = FRA }
-			FRA = { prestige = -10 }
-		}
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { prestige = -10 }
-		}
+		FRA = { prestige = -10 }
 	}
 }
 

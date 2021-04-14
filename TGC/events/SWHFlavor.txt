@@ -23,7 +23,7 @@
 			exists = SWH
 			year = 1848
 			NOT = { has_country_flag = annex_schleswig_holstein }
-			NOT = { SCH = { any_core = { NOT = { owned_by = SWH } } } }
+			NOT = { SCH = { any_core = { NOT = { OR = { owned_by = SWH owned_by = DEN } } } } }
 			SWH = { vassal_of = THIS }
 		}
 
@@ -518,6 +518,7 @@
 
 					368 = { secede_province = DEN }
 					3333 = { secede_province = SCH }
+					3468 = { secede_province = SCH }
 				}
 			}
 
@@ -541,6 +542,11 @@
 					diplomatic_influence = { who = HOL value = 400 }
 					create_vassal = HOL
 					create_alliance = HOL
+					HOL = {
+						3425 = { remove_core = HOL }
+						3425 = { add_core = OLD }
+						3425 = { secede_province = OLD }
+					}
 				}
 			}
 

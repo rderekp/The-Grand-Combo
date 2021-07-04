@@ -14,6 +14,7 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		is_colonial = no
 		owner = {
 			citizenship_policy = full_citizenship
@@ -22,7 +23,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			NOT = { average_militancy = 4 }
@@ -75,6 +76,7 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		is_colonial = no
 		unemployment = 0.05
 		has_pop_type = capitalists
@@ -82,7 +84,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			unemployment = 0.1
@@ -124,7 +126,6 @@ province_event = {
 	}
 }
 
-
 #Intermarriage
 province_event = {
 	id = 2020
@@ -133,6 +134,7 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		is_colonial = no
 		owner = {
 			civilized = yes
@@ -144,7 +146,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			owner = { citizenship_policy = full_citizenship }
@@ -193,6 +195,7 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		is_colonial = no
 		owner = {
 			civilized = yes
@@ -201,7 +204,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 800
+		months = 15000
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -246,6 +249,7 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		has_national_minority = yes
 		is_colonial = no
 		has_pop_type = capitalists
@@ -257,7 +261,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -303,6 +307,7 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		has_national_minority = yes
 		is_colonial = no
 		owner = {
@@ -317,7 +322,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			OR = {
@@ -373,6 +378,7 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		has_national_minority = yes
 		is_colonial = no
 		average_militancy = 3
@@ -380,7 +386,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
@@ -438,13 +444,14 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		has_national_minority = yes
 		is_colonial = no
 		owner = { citizenship_policy = full_citizenship }
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			NOT = { average_militancy = 3 }
@@ -483,6 +490,7 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		has_national_minority = yes
 		is_colonial = no
 		NOT = { poor_strata_life_needs = 0.9 }
@@ -496,7 +504,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			average_militancy = 2
@@ -541,13 +549,14 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		has_national_minority = yes
 		is_colonial = no
 		owner = { civilized = yes }
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			NOT = { poor_strata_life_needs = 0.9 }
@@ -605,6 +614,7 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		has_national_minority = yes
 		is_colonial = yes
 		unemployment = 0.05
@@ -613,7 +623,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			average_militancy = 5
@@ -648,7 +658,6 @@ province_event = {
 	}
 }
 
-
 #Cultural Enrichment
 province_event = {
 	id = 2110
@@ -657,12 +666,13 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		has_national_minority = yes
 		owner = { civilized = yes }
 	}
 
 	mean_time_to_happen = {
-		months = 1500
+		months = 15000
 		modifier = {
 			factor = 0.9
 			average_consciousness = 2
@@ -705,12 +715,13 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		has_national_minority = yes
 		owner = { civilized = yes }
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
@@ -765,12 +776,13 @@ province_event = {
 
 	trigger = {
 		has_recent_imigration = 30
+		NOT = { has_global_flag = assimilation_events_disabled }
 		has_national_minority = yes
 		owner = { civilized = yes }
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 15000
 		modifier = {
 			factor = 0.9
 			NOT = { average_militancy = 4 }

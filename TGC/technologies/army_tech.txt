@@ -1323,7 +1323,6 @@
 					has_unclaimed_cores = yes
 				}
 			}
-
 			modifier = {
 				factor = 3
 				OR = {

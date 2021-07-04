@@ -454,6 +454,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_terrainimg_caribbean_island"
+		texturefile = "gfx\\interface\\terrain_caribbean_island.tga"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_terrainimg_island_farmlands"
+		texturefile = "gfx\\interface\\terrain_island_farmlands.tga"
+		norefcount = yes
+	}
+
+	spriteType = {
 		name = "GFX_terrainimg_jungle"
 		texturefile = "gfx\\interface\\terrain_jungle.tga"
 		norefcount = yes
@@ -2062,6 +2074,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_terrainimg_urban_ouro_preto"
+		texturefile = "gfx\\interface\\terrain_urban_ouro_preto.tga"
+		norefcount = yes
+	}
+
+	spriteType = {
 		name = "GFX_terrainimg_urban_palermo"
 		texturefile = "gfx\\interface\\terrain_urban_palermo.tga"
 		norefcount = yes
@@ -2814,6 +2832,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_terrainimg_wonder_grand_canyon"
 		texturefile = "gfx\\interface\\terrain_wonder_grand_canyon.tga"
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_terrainimg_wonder_mount_ararat"
+		texturefile = "gfx\\interface\\terrain_wonder_mount_ararat.tga"
 		norefcount = yes
 	}
 

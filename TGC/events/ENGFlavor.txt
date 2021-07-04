@@ -1844,104 +1844,6 @@ country_event = {
 }
 
 country_event = {
-	id = 36955
-	title = "EVTNAME36955" #Conflict with Burma
-	desc = "EVTDESC36955"
-	news = yes
-	news_title = "EVTNAME36955_NEWS_TITLE"
-	news_desc_long = "EVTDESC36955_NEWS_LONG"
-	news_desc_medium = "EVTDESC36955_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC36955_NEWS_SHORT"
-	picture = "Opiumwar"
-
-	trigger = {
-		tag = ENG
-		is_greater_power = yes
-		nationalism_n_imperialism = 1
-		NOT = { has_global_flag = berlin_conference }
-		BUR = {
-			war = no
-			civilized = no
-			is_vassal = no
-			exists = yes
-			OR = {
-				neighbour = ENG
-				neighbour = EIC
-			}
-			number_of_states = 2
-			any_owned_province = { port = yes }
-			NOT = { truce_with = ENG }
-			owns = 1332
-		}
-		OR = {
-			war_policy = jingoism
-			war_policy = pro_military
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12
-
-		modifier = {
-			factor = 0.75
-			year = 1852
-		}
-
-		modifier = {
-			factor = 0.5
-			year = 1853
-		}
-	}
-
-	option = {
-		name = "EVTOPTA36955"
-		prestige = 5
-		badboy = 2
-		relation = { who = BUR value = -200 }
-		diplomatic_influence = { who = BUR value = -200 }
-		casus_belli = {
-			target = BUR
-			type = demand_concession_NI_casus_belli
-			months = 60
-		}
-		war = {
-			target = BUR
-			attacker_goal = {
-				casus_belli = demand_concession_NI_casus_belli
-				state_province_id = 1332
-			}
-			defender_goal = { casus_belli = status_quo }
-		}
-		ai_chance = {
-			factor = 99
-		}
-	}
-
-	option = {
-		name = "EVTOPTB36955"
-		prestige = -25
-		relation = { who = BUR value = 25 }
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			dominant_issue = {
-				factor = 0.05
-				value = pacifism
-			}
-		}
-		any_pop = {
-			limit = {
-				location = { is_core = HND }
-				is_primary_culture = no
-			}
-			militancy = 2
-		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-country_event = {
 	id = 36960
 	title = "EVTNAME36960" #The Gold Coast Treaty
 	desc = "EVTDESC36960"
@@ -1955,7 +1857,7 @@ country_event = {
 		relation = { who = FROM value = 100 }
 		FROM = { country_event = 36961 }
 		ai_chance = {
-			factor = 75
+			factor = 100
 			modifier = {
 				factor = 0.5
 				NOT = { relation = { who = FROM value = -50 } }
@@ -1968,7 +1870,7 @@ country_event = {
 		relation = { who = FROM value = -50 }
 		FROM = { country_event = 36962 }
 		ai_chance = {
-			factor = 25
+			factor = 0
 			modifier = {
 				factor = 2
 				NOT = { relation = { who = FROM value = -50 } }
@@ -3516,22 +3418,47 @@ country_event = {
 
 country_event = {
 	id = 1904191419
-	title = "EVTNAME1904191419" #United Kingdowm claimed misiones
+	title = "EVTNAME1904191419" #United Kingdowm wants to buy Southern Belize
 	desc = "EVTDESC1904191419"
 	picture = "wike_aycinena_convention"
 
-	fire_only_once = yes
-
 	is_triggered_only = yes
 
-	mean_time_to_happen = { days = 3 }
-
-
-	option = {
+	option = { # Accept
 		name = "EVTOPTA1904191419"
 
-		money = 10000
-		relation = { who = GUA value = -50 }
+		treasury = 10000
+		relation = { who = FROM value = 50 }
+		FROM = {
+			prestige = 2
+			treasury = -15000
+		}
+		random_country = {
+			limit = {
+				owns = 2187
+				tag = FROM
+			}
+			2190 = { secede_province = FROM }
+		}
+		random_country = {
+			limit = {
+				owns = 2187
+				tag = BLZ
+				vassal_of = FROM
+			}
+			2190 = { secede_province = BLZ }
+		}
+		2190 = { infrastructure = 1 }
+
+		ai_chance = { factor = 100 }
+	}
+
+	option = { # Refuse
+		name = "EVTOPTB1904191419"
+
+		relation = { who = FROM value = -50 }
+
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -3755,5 +3682,312 @@ country_event = {
 			name = "EVTOPTA209703"
 
 			prestige = -2
+		}
+	}
+
+## Clayton-Bulwer Treaty ## TODO how does GUA/UCA get cores on Belize
+
+	#Description: After the Mexican-American war, if the USA doesn't already have any land in Central America, they can offer a treaty to the British that neither party will expand into Central America.
+	country_event = {
+
+		id = 209704
+		title = "EVTNAME209704"
+		desc = "EVTDESC209704"
+		picture = "Administration"
+
+		trigger = {
+			tag = USA
+			is_greater_power = yes
+			OR = {
+				nationalism_n_imperialism = 1
+				has_country_flag = treaty_of_guadalupe_hidalgo_enforced
+				any_owned_province = {
+					OR = {
+						region = MEX_2183 # Yucatan
+						region = ENG_2187 # Belize
+						region = UCA_2186 # Guatemala
+						region = UCA_2191 # El Salvador
+						region = UCA_2193 # Honduras
+						region = UCA_2197 # Nicaragua
+						region = UCA_2201 # Costa Rica
+					}
+				}
+			}
+			ENG = {
+				OR = {
+					any_owned_province = {
+						OR = {
+							region = MEX_2183 # Yucatan
+							region = ENG_2187 # Belize
+							region = UCA_2186 # Guatemala
+							region = UCA_2191 # El Salvador
+							region = UCA_2193 # Honduras
+							region = UCA_2197 # Nicaragua
+							region = UCA_2201 # Costa Rica
+						}
+					}
+					AND = {
+						is_our_vassal = MSK
+						MSK = {
+							any_owned_province = {
+								OR = {
+									region = MEX_2183 # Yucatan
+									region = ENG_2187 # Belize
+									region = UCA_2186 # Guatemala
+									region = UCA_2191 # El Salvador
+									region = UCA_2193 # Honduras
+									region = UCA_2197 # Nicaragua
+									region = UCA_2201 # Costa Rica
+								}
+							}
+						}
+					}
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					OR = {
+						region = MEX_2183 # Yucatan
+						region = ENG_2187 # Belize
+						region = UCA_2186 # Guatemala
+						region = UCA_2191 # El Salvador
+						region = UCA_2193 # Honduras
+						region = UCA_2197 # Nicaragua
+						region = UCA_2201 # Costa Rica
+					}
+				}
+			}
+		}
+
+		mean_time_to_happen = {
+			months = 1
+		}
+
+		fire_only_once = yes
+
+		option = {
+			name = "EVTOPTA209704"
+
+			prestige = 2
+			ENG = { country_event = 209705 }
+
+			any_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							region = MEX_2183 # Yucatan
+							region = ENG_2187 # Belize
+							region = UCA_2186 # Guatemala
+							region = UCA_2191 # El Salvador
+							region = UCA_2193 # Honduras
+							region = UCA_2197 # Nicaragua
+							region = UCA_2201 # Costa Rica
+						}
+					}
+					OR = {
+						capital_scope = { continent = north_america }
+						capital_scope = { continent = south_america }
+					}
+					OR = {
+						is_vassal = no
+						overlord = { capital_scope = { continent = north_america } }
+						overlord = { capital_scope = { continent = south_america } }
+					}
+				}
+				relation = { who = THIS value = 30 }
+				diplomatic_influence = { who = THIS value = 30 }
+			}
+
+			ai_chance = { factor = 90 }
+		}
+
+		option = {
+			name = "EVTOPTB209704"
+
+			prestige = -2
+
+			ai_chance = { factor = 10 }
+		}
+	}
+
+	#Description: Britain can choose to sign the treaty, establishing Belize as a puppet and yielding the Bay Islands and Miskito coast, or refuse.
+	country_event = {
+
+		id = 209705
+		title = "EVTNAME209705"
+		desc = "EVTDESC209705"
+		picture = "Administration"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA209705"
+
+			badboy = -3
+			relation = { who = FROM value = 50 }
+
+			ENG_2187 = { add_core = BLZ remove_core = JAM }
+			release_vassal = BLZ
+
+			random_owned = { # Send event to secede 2196
+				limit = { province_id = 2196 }
+				remove_core = JAM
+				random_country = {
+					limit = { owns = 2195 }
+					country_event = 209706
+				}
+			}
+
+			random_country = { # Send events to relevant Miskito Coast province owners (but only one if they are the same)
+				limit = {
+					OR = {
+						AND = { owns = 3334 NOT = { owns = 2195 } }
+						AND = { owns = 2220 NOT = { owns = 2198 } }
+					}
+					OR = {
+						tag = THIS
+						vassal_of = THIS
+					}
+				}
+				random_country = {
+					limit = {
+						owns = 2195
+						owns = 2198
+					}
+					country_event = 209707
+				}
+				random_country = {
+					limit = {
+						owns = 2195
+						NOT = { owns = 2198 }
+					}
+					country_event = 209707
+				}
+				random_country = {
+					limit = {
+						owns = 2198
+						NOT = { owns = 2195 }
+					}
+					country_event = 209707
+				}
+			}
+
+			set_global_flag = clayton_bulwer_treaty_signed # TODO this should also prevent USA expansion into Central America for when we add Nicaragua filibustering, Yucatan as a state etc
+
+			ai_chance = { factor = 95 }
+		}
+
+		option = {
+			name = "EVTOPTB209705"
+
+			prestige = 2
+			relation = { who = FROM value = -75 }
+
+			ai_chance = { factor = 5 }
+		}
+	}
+
+	#Description: Event to secede the Bay Islands province
+	country_event = {
+
+		id = 209706
+		title = "EVTNAME209706"
+		desc = "EVTDESC209706"
+		picture = "Administration"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA209706"
+
+			prestige = 1
+			2196 = { secede_province = THIS }
+			random_owned = { # If 2195 is a core then 2196 should also be a core
+				limit = {
+					province_id = 2195
+					is_core = THIS
+				}
+				2196 = { add_core = THIS }
+			}
+			relation = { who = FROM value = 20 }
+		}
+	}
+
+	#Description: Event to secede the Miskito Coast provinces
+	country_event = {
+
+		id = 209707
+		title = "EVTNAME209707"
+		desc = "EVTDESC209707"
+		picture = "Administration"
+
+		is_triggered_only = yes
+
+		option = {
+			name = "EVTOPTA209707"
+
+			prestige = 2
+
+			random_owned = { # If 3334 is owned directly or by vassal of FROM, secede it
+				limit = {
+					province_id = 2195
+					3334 = {
+						owner = {
+							OR = {
+								tag = FROM
+								vassal_of = FROM
+							}
+						}
+					}
+				}
+				3334 = { secede_province = THIS }
+			}
+			random_owned = { # If 2195 is a core 3334 should also be a core
+				limit = {
+					province_id = 2195
+					is_core = THIS
+					3334 = {
+						owner = {
+							OR = {
+								tag = FROM
+								vassal_of = FROM
+							}
+						}
+					}
+				}
+				3334 = { add_core = THIS }
+			}
+
+			random_owned = { # If 2220 is owned directly or by vassal of FROM, secede it
+				limit = {
+					province_id = 2198
+					2220 = {
+						owner = {
+							OR = {
+								tag = FROM
+								vassal_of = FROM
+							}
+						}
+					}
+				}
+				2220 = { secede_province = THIS }
+			}
+			random_owned = { # If 2198 is a core 2220 should also be a core
+				limit = {
+					province_id = 2198
+					is_core = THIS
+					2220 = {
+						owner = {
+							OR = {
+								tag = FROM
+								vassal_of = FROM
+							}
+						}
+					}
+				}
+				2220 = { add_core = THIS }
+			}
+
+			relation = { who = FROM value = 30 }
 		}
 	}

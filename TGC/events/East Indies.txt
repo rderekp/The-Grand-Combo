@@ -639,15 +639,15 @@ country_event = {
 				NOT = { vassal_of = QNG }
 				NOT = { in_sphere = THIS }
 			}
-			KLM = { #Bandjar
-				neighbour = VOC
-				exists = yes
-				NOT = { civilized = yes }
-				NOT = { truce_with = THIS }
-				NOT = { vassal_of = THIS }
-				NOT = { vassal_of = VOC }
-				NOT = { in_sphere = THIS }
-			}
+			#KLM = { #Bandjar
+			#	neighbour = VOC
+			#	exists = yes
+			#	NOT = { civilized = yes }
+			#	NOT = { truce_with = THIS }
+			#	NOT = { vassal_of = THIS }
+			#	NOT = { vassal_of = VOC }
+			#	NOT = { in_sphere = THIS }
+			#}
 			DJA = { #Jambi
 				neighbour = VOC
 				exists = yes
@@ -773,7 +773,7 @@ country_event = {
 			casus_belli = BAL
 			casus_belli = KTI
 			casus_belli = LAN
-			casus_belli = KLM
+			#casus_belli = KLM
 			casus_belli = DJA
 			casus_belli = RIA
 			casus_belli = JAV
@@ -815,7 +815,7 @@ country_event = {
 					tag = BAL
 					tag = KTI
 					tag = LAN
-					tag = KLM
+					#tag = KLM
 					tag = DJA
 					tag = RIA
 					tag = JAV
@@ -854,7 +854,7 @@ country_event = {
 					tag = BAL
 					tag = KTI
 					tag = LAN
-					tag = KLM
+					#tag = KLM
 					tag = DJA
 					tag = RIA
 					tag = JAV
@@ -893,7 +893,7 @@ country_event = {
 					tag = BAL
 					tag = KTI
 					tag = LAN
-					tag = KLM
+					#tag = KLM
 					tag = DJA
 					tag = RIA
 					tag = JAV
@@ -932,7 +932,7 @@ country_event = {
 					tag = BAL
 					tag = KTI
 					tag = LAN
-					tag = KLM
+					#tag = KLM
 					tag = DJA
 					tag = RIA
 					tag = JAV
@@ -971,7 +971,7 @@ country_event = {
 					tag = BAL
 					tag = KTI
 					tag = LAN
-					tag = KLM
+					#tag = KLM
 					tag = DJA
 					tag = RIA
 					tag = JAV
@@ -1010,7 +1010,7 @@ country_event = {
 					tag = BAL
 					tag = KTI
 					tag = LAN
-					tag = KLM
+					#tag = KLM
 					tag = DJA
 					tag = RIA
 					tag = JAV
@@ -1061,7 +1061,7 @@ country_event = {
 					tag = BAL
 					tag = KTI
 					tag = LAN
-					tag = KLM
+					#tag = KLM
 					tag = DJA
 					tag = RIA
 					tag = JAV
@@ -1087,7 +1087,61 @@ country_event = {
 	}
 }
 
-# event to Inherit (Indonesia/Malya)
+#Event to start wars between AI NET and AI Indonesian minors
+country_event = {
+	id = 95252
+	title = "EVTNAME95252"
+	desc = "EVTDESC95252"
+	picture = "danishgovernment"
+
+	trigger = {
+		VOC = {
+		 	exists = yes
+			OR = {
+				substate_of = NET
+				vassal_of = NET
+			}
+		}
+		NET = { casus_belli = THIS ai = yes } #Less likely to be true than the following
+		OR = {
+			tag = ATJ
+			tag = SAK
+			tag = SLW
+			tag = BAL
+			tag = KTI
+			tag = LAN
+			#tag = KLM
+			tag = DJA
+			tag = RIA
+			tag = JAV
+			tag = BGN
+			tag = SLA
+			tag = STG
+			tag = PTK
+			tag = SBS
+			tag = MAL
+			tag = PIT
+			tag = LUW
+			tag = BTN
+			tag = TMR
+		}
+		ai = yes
+	}
+
+	option = {
+		name = "EVTOPTA95252"
+		NET = {
+			war = {
+				target = THIS
+				defender_goal = { casus_belli = status_quo }
+				attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+				call_ally = no
+			}
+		}
+	}
+}
+
+# event to Inherit (Indonesia/Malaya)
 country_event = {
 	id = 95255
 	title = "EVTNAME95255" #Indonesian Unification
@@ -2147,5 +2201,188 @@ province_event = {
 				move_pop = 1385
 			}
 		}
+	}
+}
+
+# The Second Anglo-Burmese War
+country_event = {
+	id = 36955
+	title = "EVTNAME36955" #Conflict with Burma
+	desc = "EVTDESC36955"
+	news = yes
+	news_title = "EVTNAME36955_NEWS_TITLE"
+	news_desc_long = "EVTDESC36955_NEWS_LONG"
+	news_desc_medium = "EVTDESC36955_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC36955_NEWS_SHORT"
+	picture = "Opiumwar"
+
+	trigger = {
+		tag = ENG
+		is_greater_power = yes
+		nationalism_n_imperialism = 1
+		NOT = { has_global_flag = berlin_conference }
+		BUR = {
+			war = no
+			civilized = no
+			is_vassal = no
+			exists = yes
+			OR = {
+				neighbour = ENG
+				neighbour = EIC
+			}
+			number_of_states = 2
+			any_owned_province = { port = yes }
+			NOT = { truce_with = ENG }
+			owns = 1332
+		}
+		OR = {
+			war_policy = jingoism
+			war_policy = pro_military
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+
+		modifier = {
+			factor = 0.75
+			year = 1852
+		}
+
+		modifier = {
+			factor = 0.5
+			year = 1853
+		}
+	}
+
+	option = {
+		name = "EVTOPTA36955"
+		prestige = 5
+		badboy = 2
+		relation = { who = BUR value = -200 }
+		diplomatic_influence = { who = BUR value = -200 }
+		casus_belli = {
+			target = BUR
+			type = demand_concession_NI_casus_belli
+			months = 60
+		}
+		war = {
+			target = BUR
+			attacker_goal = {
+				casus_belli = demand_concession_NI_casus_belli
+				state_province_id = 1332
+			}
+			defender_goal = { casus_belli = status_quo }
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+
+	option = {
+		name = "EVTOPTB36955"
+		prestige = -25
+		relation = { who = BUR value = 25 }
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			dominant_issue = {
+				factor = 0.05
+				value = pacifism
+			}
+		}
+		any_pop = {
+			limit = {
+				location = { is_core = HND }
+				is_primary_culture = no
+			}
+			militancy = 2
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# The Third Anglo-Burmese War
+country_event = {
+	id = 99991
+	title = "EVTNAME99991"
+	desc = "EVTDESC99991"
+	picture = "third_burma_war"
+
+	trigger = {
+		tag = ENG
+		owns = 1330
+		is_greater_power = yes
+		nationalism_n_imperialism = 1
+		has_global_flag = berlin_conference
+		BUR = {
+			war = no
+			civilized = no
+			is_vassal = no
+			exists = yes
+			OR = {
+				neighbour = ENG
+				neighbour = EIC
+			}
+			NOT = { truce_with = ENG }
+		}
+		OR = {
+			war_policy = jingoism
+			war_policy = pro_military
+		}
+		NOT = { has_country_flag = burma_3 }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.5
+			year = 1885
+		}
+	}
+
+	option = {
+		name = "EVT99991OPTA"
+		prestige = 5
+		badboy = 3
+		relation = { who = BUR value = -200 }
+		diplomatic_influence = { who = BUR value = -200 }
+		casus_belli = {
+			target = BUR
+			type = establish_protectorate_casus_belli
+			months = 60
+		}
+		war = {
+			target = BUR
+			attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+		set_country_flag = burma_3
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = "EVT99991OPTB"
+		prestige = -25
+		relation = { who = BUR value = 25 }
+		set_country_flag = burma_3
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			dominant_issue = {
+				factor = 0.05
+				value = pacifism
+			}
+		}
+		any_pop = {
+			limit = {
+				location = { is_core = HND }
+				is_primary_culture = yes
+			}
+			militancy = 2
+		}
+		ai_chance = { factor = 0 }
 	}
 }

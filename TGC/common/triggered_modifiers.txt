@@ -29,7 +29,7 @@ low_health_care_fully_funded = {
 			}
 		}
 	}
-	global_population_growth = 0.001
+	global_population_growth = 0.002
 	icon = 19
 }
 
@@ -49,7 +49,7 @@ acceptable_health_care_fully_funded = {
 			}
 		}
 	}
-	global_population_growth = 0.001
+	global_population_growth = 0.003
 	icon = 19
 }
 
@@ -69,7 +69,7 @@ good_health_care_fully_funded = {
 			}
 		}
 	}
-	global_population_growth = 0.002
+	global_population_growth = 0.004
 	icon = 19
 }
 
@@ -584,6 +584,13 @@ malacca_strait = {
 new_world_war = {
 	trigger = {
 		war = yes
+		any_owned_province = {
+			AND = {
+				is_colonial = no
+				NOT = { controlled_by = THIS }
+				total_pops = 15000
+			}
+		}
 		OR = {
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
@@ -991,14 +998,6 @@ south_american_ai_ii = {
 	supply_consumption = -0.2
 	mobilisation_size = 0.03
 	icon = 19
-}
-
-ai_militancy_fix = {
-	trigger = {
-		ai = yes
-		average_militancy = 5
-	}
-	core_pop_militancy_modifier = -0.2
 }
 
 money_hoarder_1 = {

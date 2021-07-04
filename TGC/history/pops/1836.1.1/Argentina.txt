@@ -117,7 +117,7 @@
 		militancy = 2
 	}
 }
-#Guardia de Luj√°n (10000/4000 POPS)
+#Guardia de Luj·n (10000/4000 POPS)
 2350 = {
 	aristocrats = {
 		culture = argentinian
@@ -201,7 +201,7 @@
 		size = 950
 	}
 }
-#Bah√≠a Blanca (10000/4000 POPS)
+#BahÌa Blanca (10000/4000 POPS)
 2354 = {
 	clergymen = {
 		culture = patagonian
@@ -248,17 +248,17 @@
 	}
 }
 #Misiones Region (30000)
-#Anunciaci√≥n de Itap√∫a (20000/9000 POPS)
+#AnunciaciÛn de Itap˙a (20000/9000 POPS)
 2341 = {
 	aristocrats = {
 		culture = paraguayan
 		religion = catholic
-		size = 300
+		size = 100
 	}
 	bureaucrats = {
 		culture = paraguayan
 		religion = catholic
-		size = 100
+		size = 50
 	}
 	clergymen = {
 		culture = paraguayan
@@ -273,7 +273,7 @@
 	farmers = {
 		culture = paraguayan
 		religion = catholic
-		size = 1000
+		size = 1250
 	}
 	farmers = {
 		culture = argentinian
@@ -298,17 +298,17 @@
 		size = 1500
 	}
 	farmers = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 3500
 	}
 }
-#Ap√≥stoles Pedro y Pablo (10000/5000 POPS)
+#ApÛstoles Pedro y Pablo (10000/5000 POPS)
 2554 = {
 	aristocrats = {
 		culture = argentinian
 		religion = catholic
-		size = 200
+		size = 100
 	}
 	clergymen = {
 		culture = argentinian
@@ -328,7 +328,7 @@
 	farmers = {
 		culture = argentinian
 		religion = catholic
-		size = 1300
+		size = 1400
 	}
 	artisans = {
 		culture = amazonian
@@ -346,23 +346,23 @@
 		size = 1000
 	}
 	artisans = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 200
 	}
 	soldiers = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 300
 	}
 	farmers = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 1000
 	}
 }
 #Corrientes Region (40000)
-#Corrientes (20000/10000 POPS)
+#Corrientes (20000/12500 POPS)
 2356 = {
 	aristocrats = {
 		culture = argentinian
@@ -392,7 +392,7 @@
 	soldiers = {
 		culture = argentinian
 		religion = catholic
-		size = 3000
+		size = 5500
 	}
 	farmers = {
 		culture = argentinian
@@ -412,22 +412,22 @@
 		militancy = 2
 	}
 	artisans = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 300
 	}
 	soldiers = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 200
 	}
 	farmers = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 1500
 	}
 }
-#Curuz√∫ Cuati√° (8000/3000 POPS)
+#Curuz˙ Cuati· (8000/3000 POPS)
 2357 = {
 	aristocrats = {
 		culture = argentinian
@@ -489,28 +489,28 @@
 		size = 3300
 	}
 	artisans = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 300
 	}
 	soldiers = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 200
 	}
 	farmers = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 1500
 	}
 }
-#Entre R√≠os Region (30000)
-#Paran√° (20000/10000 POPS)
+#Entre RÌos Region (30000)
+#Paran· (20000/12000 POPS)
 2360 = {
 	aristocrats = {
 		culture = argentinian
 		religion = catholic
-		size = 400
+		size = 300
 	}
 	bureaucrats = {
 		culture = argentinian
@@ -535,7 +535,7 @@
 	soldiers = {
 		culture = argentinian
 		religion = catholic
-		size = 3000
+		size = 5100
 	}
 	farmers = {
 		culture = argentinian
@@ -560,7 +560,7 @@
 	aristocrats = {
 		culture = argentinian
 		religion = catholic
-		size = 200
+		size = 100
 	}
 	clergymen = {
 		culture = argentinian
@@ -575,7 +575,7 @@
 	soldiers = {
 		culture = argentinian
 		religion = catholic
-		size = 200
+		size = 300
 	}
 	farmers = {
 		culture = argentinian
@@ -689,12 +689,12 @@
 	soldiers = {
 		culture = argentinian
 		religion = catholic
-		size = 400
+		size = 1400
 	}
 	farmers = {
 		culture = argentinian
 		religion = catholic
-		size = 14000
+		size = 13000
 	}
 	farmers = {
 		culture = afro_caribeno
@@ -710,7 +710,7 @@
 	}
 }
 #Chaco Austral (10000)
-#Concepci√≥n de Buena Esperanza (8000/3000 POPS)
+#ConcepciÛn de Buena Esperanza (8000/3000 POPS)
 2364 = {
 	clergymen = {
 		culture = guarani
@@ -772,7 +772,7 @@
 	}
 }
 #Chaco Central Region (24000)
-#Misi√≥n del Santo Rosario y San Carlos del Timb√≥ (20000/9000 POPS)
+#MisiÛn del Santo Rosario y San Carlos del TimbÛ (20000/9000 POPS)
 2366 = {
 	clergymen = {
 		culture = guarani
@@ -839,12 +839,12 @@
 	aristocrats = {
 		culture = argentinian
 		religion = catholic
-		size = 300
+		size = 100
 	}
 	bureaucrats = {
 		culture = argentinian
 		religion = catholic
-		size = 200
+		size = 100
 	}
 	officers = {
 		culture = argentinian
@@ -869,7 +869,7 @@
 	farmers = {
 		culture = argentinian
 		religion = catholic
-		size = 7800
+		size = 8000
 	}
 	artisans = {
 		culture = aimara
@@ -892,7 +892,7 @@
 	aristocrats = {
 		culture = argentinian
 		religion = catholic
-		size = 300
+		size = 100
 	}
 	clergymen = {
 		culture = argentinian
@@ -912,7 +912,7 @@
 	farmers = {
 		culture = argentinian
 		religion = catholic
-		size = 3000
+		size = 3200
 	}
 	clergymen = {
 		culture = aimara
@@ -968,7 +968,7 @@
 		size = 2800
 	}
 }
-#√ëancahuasu (5000/1500 POPS)
+#—ancahuasu (5000/1500 POPS)
 2369 = {
 	clergymen = {
 		culture = aimara
@@ -1115,18 +1115,18 @@
 		size = 225
 	}
 	farmers = {
-		culture = tupinamba
+		culture = guarani
 		religion = animist
 		size = 75
 	}
 }
-#Tucum√°n y Catamarca Region (35000)
-#San Miguel de Tucum√°n (10000/5000 POPS)
+#Tucum·n y Catamarca Region (35000)
+#San Miguel de Tucum·n (10000/5000 POPS)
 2373 = {
 	aristocrats = {
 		culture = argentinian
 		religion = catholic
-		size = 400
+		size = 200
 	}
 	bureaucrats = {
 		culture = argentinian
@@ -1151,7 +1151,7 @@
 	soldiers = {
 		culture = argentinian
 		religion = catholic
-		size = 100
+		size = 300
 	}
 	farmers = {
 		culture = argentinian
@@ -1356,7 +1356,7 @@
 	}
 }
 #San Luis Region (50000)
-#San Luis de R√≠o Seco (30000/14000 POPS)
+#San Luis de RÌo Seco (30000/14000 POPS)
 2384 = {
 	clergymen = {
 		culture = patagonian
@@ -1418,7 +1418,7 @@
 	}
 }
 #Cordoba Region (90000)
-#C√≥rdoba de La Nueva Andaluc√≠a (40000/20000 POPS)
+#CÛrdoba de La Nueva AndalucÌa (40000/20000 POPS)
 2379 = {
 	aristocrats = {
 		culture = argentinian
@@ -1513,7 +1513,7 @@
 		size = 5000
 	}
 }
-#Concepci√≥n de R√≠o Cuarto (15000/7000 POPS)
+#ConcepciÛn de RÌo Cuarto (15000/7000 POPS)
 2382 = {
 	artisans = {
 		culture = patagonian
@@ -1537,7 +1537,7 @@
 	bureaucrats = {
 		culture = argentinian
 		religion = catholic
-		size = 200
+		size = 50
 	}
 	officers = {
 		culture = argentinian
@@ -1552,12 +1552,12 @@
 	artisans = {
 		culture = argentinian
 		religion = catholic
-		size = 900
+		size = 950
 	}
 	farmers = {
 		culture = argentinian
 		religion = catholic
-		size = 2600
+		size = 2700
 	}
 	farmers = {
 		culture = patagonian
@@ -1616,7 +1616,7 @@
 	bureaucrats = {
 		culture = argentinian
 		religion = catholic
-		size = 200
+		size = 50
 	}
 	officers = {
 		culture = argentinian
@@ -1631,7 +1631,7 @@
 	artisans = {
 		culture = argentinian
 		religion = catholic
-		size = 500
+		size = 550
 	}
 	soldiers = {
 		culture = argentinian
@@ -1641,7 +1641,7 @@
 	farmers = {
 		culture = argentinian
 		religion = catholic
-		size = 3600
+		size = 3800
 	}
 	slaves = {
 		culture = afro_caribeno
@@ -1655,7 +1655,7 @@
 		size = 4500
 	}
 }
-#San Jos√© de J√°chal (8000/2800 POPS)
+#San JosÈ de J·chal (8000/2800 POPS)
 2388 = {
 	aristocrats = {
 		culture = argentinian
@@ -1755,7 +1755,7 @@
 		size = 7500
 	}
 }
-#R√≠o Negro Region (20000)
+#RÌo Negro Region (20000)
 #Mercedes de Patagones (10000/6000 POPS)
 2392 = {
 	clergymen = {
@@ -1797,7 +1797,7 @@
 		size = 1500
 	}
 }
-#Pa√≠s de la Manzanas (5000/3000 POPS)
+#PaÌs de la Manzanas (5000/3000 POPS)
 2394 = {
 	artisans = {
 		culture = patagonian
@@ -1816,7 +1816,7 @@
 	}
 }
 #La Pampa Region (10000)
-#Pampa H√∫meda (6000/2500 POPS)
+#Pampa H˙meda (6000/2500 POPS)
 2393 = {
 	clergymen = {
 		culture = patagonian
@@ -1863,7 +1863,7 @@
 	}
 }
 #La Patagonia Region (40000)
-#R√≠o Gallegos (10000/5000 POPS)
+#RÌo Gallegos (10000/5000 POPS)
 2399 = {
 	clergymen = {
 		culture = patagonian
@@ -1891,7 +1891,7 @@
 		size = 2500
 	}
 }
-#Fuerte de San Jos√© de la Candelaria (10000/4000 POPS)
+#Fuerte de San JosÈ de la Candelaria (10000/4000 POPS)
 2396 = {
 	clergymen = {
 		culture = patagonian

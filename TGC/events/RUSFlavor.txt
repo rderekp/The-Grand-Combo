@@ -666,6 +666,9 @@ country_event = {
 		1186 = { add_core = RUS }
 		1188 = { add_core = RUS }
 		1190 = { add_core = RUS }
+		1208 = { add_core = RUS }
+		1189 = { add_core = RUS }
+		1185 = { add_core = RUS }
 	}
 }
 
@@ -3473,14 +3476,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB24600" #Truly, we have far surpassed the French.
 		prestige = 15
-		random_owned = {
-			limit = { exists = FRA }
-			FRA = { prestige = -10 }
-		}
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { prestige = -10 }
-		}
+		FRA = { prestige = -10 }
 	}
 }
 
@@ -3828,8 +3824,8 @@ country_event = {
 
 		trigger = {
 			tag = RUS
+			AUS_662 = { NOT = { owned_by = THIS } }
 			RUS_968 = { NOT = { owned_by = THIS } }
-			RUS_955 = { NOT = { owned_by = THIS } }
 			RUS_958 = { NOT = { owned_by = THIS } }
 			677 = { owned_by = THIS }
 			676 = { owned_by = THIS }
@@ -3874,8 +3870,8 @@ country_event = {
 		trigger = {
 			tag = RUS
 			RUS_968 = { NOT = { owned_by = THIS } }
-			RUS_955 = { NOT = { owned_by = THIS } }
-			RUS_958 = { NOT = { owned_by = THIS } }
+			AUS_662 = { NOT = { owned_by = THIS } }
+			RUS_954 = { NOT = { owned_by = THIS } }
 			677 = { owned_by = THIS }
 			676 = { owned_by = THIS }
 			NOT = { exists = ROM }
@@ -3907,8 +3903,8 @@ country_event = {
 		trigger = {
 			tag = RUS
 			RUS_968 = { NOT = { owned_by = THIS } }
-			RUS_955 = { NOT = { owned_by = THIS } }
-			RUS_958 = { NOT = { owned_by = THIS } }
+			AUS_662 = { NOT = { owned_by = THIS } }
+			RUS_954 = { NOT = { owned_by = THIS } }
 			677 = { owned_by = THIS }
 			676 = { owned_by = THIS }
 			NOT = { exists = ROM }
@@ -3958,3 +3954,5 @@ country_event = {
 		ai_chance = { factor = 25 }
 	}
 }
+
+# TODO Kalmykia 1041 to Elista in 1865

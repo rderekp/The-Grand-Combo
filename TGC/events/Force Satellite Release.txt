@@ -955,3 +955,41 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 800025
+	title = "We are a vassal!"
+	desc = "One day we shall be independent once more.."
+	picture = "administration"
+
+	trigger = {
+		is_vassal = yes
+		NOT = { has_country_flag = vassal_nation_cb }
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "Sad!"
+		set_country_flag = vassal_nation_cb
+	}
+}
+
+country_event = {
+	id = 800026
+	title = "We are no longer a vassal!"
+	desc = "Long live our independence!"
+	picture = "administration"
+
+	trigger = {
+		has_country_flag = vassal_nation_cb
+		is_vassal = no
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "Great!"
+		clr_country_flag = vassal_nation_cb
+	}
+}

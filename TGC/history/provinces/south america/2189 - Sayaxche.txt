@@ -1,7 +1,3 @@
-owner = UCA
-controller = UCA
-add_core = UCA
-add_core = GUA
-trade_goods = timber
-life_rating = 31
+trade_goods = tropical_wood
+life_rating = 5
 #terrain = jungle_hills

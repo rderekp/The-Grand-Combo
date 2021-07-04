@@ -449,10 +449,7 @@ political_decisions = {
 			}
 			random_country = {
 				limit = {
-					OR = {
-						tag = FRA
-						tag = BOR
-					}
+					tag = FRA
 					alliance_with = THIS
 					THIS = { is_greater_power = no }
 				}
@@ -524,10 +521,7 @@ political_decisions = {
 
 			random_country = {
 				limit = {
-					OR = {
-						tag = FRA
-						tag = BOR
-					}
+					tag = FRA
 					has_country_flag = restore_alliance
 				}
 				clr_country_flag = restore_alliance
@@ -974,7 +968,6 @@ political_decisions = {
 						exists = yes
 						OR = {
 							has_country_flag = objects_to_italy
-							tag = BOR
 							tag = FRA
 							tag = AUS
 							tag = KUK
@@ -1070,7 +1063,6 @@ political_decisions = {
 						exists = yes
 						OR = {
 							has_country_flag = objects_to_italy
-							tag = BOR
 							tag = FRA
 							tag = AUS
 							tag = KUK
@@ -1164,7 +1156,6 @@ political_decisions = {
 						exists = yes
 						OR = {
 							has_country_flag = objects_to_italy
-							tag = BOR
 							tag = FRA
 							tag = AUS
 							tag = KUK
@@ -1388,10 +1379,8 @@ political_decisions = {
 							}
 						}
 						NOT = {
-							OR = {
-								culture = north_italian
-								culture = south_italian
-							}
+							culture = north_italian
+							culture = south_italian
 						}
 					}
 				}
@@ -1588,7 +1577,6 @@ political_decisions = {
 				tag = AUS
 				tag = KUK
 				tag = DNB
-				tag = GCF
 			}
 			is_greater_power = yes
 			NOT = {
@@ -1626,12 +1614,11 @@ political_decisions = {
 									vassal_of = THIS
 								}
 							}
+							is_core = SIC
 						}
 						NOT = {
-							OR = {
-								culture = north_italian
-								culture = south_italian
-							}
+							culture = north_italian
+							culture = south_italian
 						}
 					}
 				}
@@ -1663,6 +1650,7 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			badboy = 10
+			inherit = LVN
 			any_country = {
 				limit = {
 					OR = {
@@ -1672,13 +1660,14 @@ political_decisions = {
 					NOT = {
 						tag = SMR
 						tag = MNC
+						tag = PAP
+						tag = SIC
 					}
 					in_sphere = THIS
 				}
 				annex_to = THIS
 			}
 			VEN = { all_core = { add_core = THIS } }
-			VEN = { all_core = { remove_core = LOM } }
 			SRD = { all_core = { remove_core = SAR } }
 			GEN = { all_core = { add_core = LOM } }
 			PAR = { all_core = { add_core = LOM } }
@@ -1686,32 +1675,30 @@ political_decisions = {
 			LUC = { all_core = { add_core = LOM } }
 			MOD = { all_core = { add_core = LOM } }
 			TUS = { all_core = { add_core = LOM } }
-			RMG = { all_core = { add_core = LOM } }
-			751 = { add_core = SIC }
-			752 = { add_core = SIC }
-			PAP = { all_core = { remove_core = PAP } }
-			750 = { add_core = PAP }
-			749 = { add_core = PAP }
-			3374 = { add_core = PAP }
+			ITA = { all_core = { remove_core = ITA } }
+			RMG = { all_core = { add_core = LOM remove_core = PAP secede_province = THIS } }
 			release_vassal = LOM
-			release_vassal = SIC
 			release_vassal = SRD
-			release_vassal = PAP
-			PAP = {	government = theocracy }
 			create_alliance = LOM
-			create_alliance = SIC
 			create_alliance = SRD
-			create_alliance = PAP
 			diplomatic_influence = {
 				who = SIC
-				value = 300
+				value = -400
 			}
-			diplomatic_influence = {
-				who = LOM
-				value = 300
+			relation = {
+				who = SIC
+				value = -400
 			}
 			diplomatic_influence = {
 				who = PAP
+				value = -400
+			}
+			relation = {
+				who = PAP
+				value = -400
+			}
+			diplomatic_influence = {
+				who = LOM
 				value = 300
 			}
 			diplomatic_influence = {
@@ -1729,6 +1716,7 @@ political_decisions = {
 					days = 30
 				}
 			}
+			#TODO: Add event for Two Sicilies and the Papal States to propose unification against the Austrian threat
 			random_country = {
 				limit = {
 					owns = 473

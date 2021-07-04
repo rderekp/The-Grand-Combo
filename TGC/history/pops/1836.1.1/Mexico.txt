@@ -58,7 +58,7 @@
 	}
 }
 
-#Bah√≠a de los √ùngeles / San Felipe (4000/1000 POPS)
+#BahÌa de los Angeles / San Felipe (4000/1000 POPS)
 2139 = {
 	aristocrats = {
 		culture = mexican
@@ -293,12 +293,12 @@
 	soldiers = {
 		culture = yaqui
 		religion = animist
-		size = 75
+		size = 400
 	}
 	farmers = {
 		culture = yaqui
 		religion = animist
-		size = 8325
+		size = 8000
 	}
 }
 
@@ -331,13 +331,13 @@
 	farmers = {
 		culture = mexican
 		religion = catholic
-		size = 10050
+		size = 10000
 		militancy = 5
 	}
 	aristocrats = {
 		culture = yaqui
 		religion = animist
-		size = 50
+		size = 100
 	}
 	clergymen = {
 		culture = yaqui
@@ -352,12 +352,12 @@
 	soldiers = {
 		culture = yaqui
 		religion = animist
-		size = 25
+		size = 725
 	}
 	farmers = {
 		culture = yaqui
 		religion = animist
-		size = 3700
+		size = 3000
 	}
 }
 
@@ -429,7 +429,7 @@
 	}
 }
 
-#El Paso del Norte / Ciudad Ju√°rez (15000/3000 POPS)
+#El Paso del Norte / Ciudad Ju·rez (15000/3000 POPS)
 2143 = {
 	aristocrats = {
 		culture = mexican
@@ -557,30 +557,40 @@
 		religion = catholic
 		size = 895
 	}
+        soldiers = {
+		culture = apache
+		religion = animist
+		size = 200
+	}
+        farmers = {
+		culture = apache
+		religion = animist
+		size = 1000
+	}
 	aristocrats = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 50
 	}
 	clergymen = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 75
 	}
 	artisans = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 150
 	}
 	soldiers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 25
 	}
 	farmers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
-		size = 2700
+		size = 1500
 		militancy = 9
 	}
 }
@@ -612,9 +622,13 @@
 	farmers = {
 		culture = mexican
 		religion = catholic
-		size = 700
+		size = 800
 	}
-
+    farmers = {
+		culture = apache
+		religion = animist
+		size = 400
+	}
 	clergymen = {
 		culture = nahua
 		religion = animist
@@ -633,7 +647,7 @@
 	farmers = {
 		culture = nahua
 		religion = animist
-		size = 2200
+		size = 1700
 	}
 }
 
@@ -716,22 +730,22 @@
 		size = 9925
 	}
 	clergymen = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 100
 	}
 	artisans = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 150
 	}
 	soldiers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 100
 	}
 	farmers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 2750
 	}
@@ -759,12 +773,12 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 600
+		size = 800
 	}
 	farmers = {
 		culture = mexican
 		religion = catholic
-		size = 12800
+		size = 12600
 	}
 
 	clergymen = {
@@ -830,16 +844,19 @@
 		culture = apache
 		religion = animist
 		size = 75
+                militancy = 9
 	}
 	artisans = {
 		culture = apache
 		religion = animist
 		size = 150
+                militancy = 9
 	}
 	soldiers = {
 		culture = apache
 		religion = animist
 		size = 25
+                militancy = 9
 	}
 	farmers = {
 		culture = apache
@@ -948,33 +965,33 @@
 		size = 12650
 	}
 	aristocrats = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 25
 	}
 	clergymen = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 100
 	}
 	artisans = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 100
 	}
 	soldiers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 100
 	}
 	farmers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 1800
 	}
 }
 
-#G√≥mez Palacio (50000/11000 POPS)
+#GÛmez Palacio (50000/11000 POPS)
 2154 = {
 	aristocrats = {
 		culture = mexican
@@ -1002,27 +1019,27 @@
 		size = 8250
 	}
 	aristocrats = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 25
 	}
 	clergymen = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 100
 	}
 	artisans = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 100
 	}
 	soldiers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 100
 	}
 	farmers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 1800
 	}
@@ -1030,7 +1047,7 @@
 
 #Sinaloa Region (144000)
 #ruled by Mexico 1836
-#Mazatl√°n (116000/29000 POPS)
+#Mazatl·n (116000/29000 POPS)
 2156 = {
 	aristocrats = {
 		culture = mexican
@@ -1069,7 +1086,7 @@
 	}
 }
 
-#Culiac√°n Rosales (28000/7000 POPS)
+#Culiac·n Rosales (28000/7000 POPS)
 2157 = {
 	aristocrats = {
 		culture = mexican
@@ -1098,22 +1115,22 @@
 	}
 
 	clergymen = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 100
 	}
 	artisans = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 100
 	}
 	soldiers = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 100
 	}
 	farmers = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 3000
 	}
@@ -1220,22 +1237,22 @@
 	}
 
 	clergymen = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 100
 	}
 	artisans = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 500
 	}
 	soldiers = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 400
 	}
 	farmers = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 9000
 	}
@@ -1284,7 +1301,7 @@
 	farmers = {
 		culture = mexican
 		religion = catholic
-		size = 1600
+		size = 16600
 		militancy = 5
 	}
 	clergymen = {
@@ -1302,47 +1319,47 @@
 	soldiers = {
 		culture = nahua
 		religion = catholic
-		size = 225
+		size = 250
 		militancy = 5
 	}
 	farmers = {
 		culture = nahua
 		religion = catholic
-		size = 20025
+		size = 15000
 		militancy = 5
 	}
 	clergymen = {
-		culture = mixtec
+		culture = zapotec
 		religion = catholic
 		size = 50
 		militancy = 5
 	}
 	artisans = {
-		culture = mixtec
+		culture = zapotec
 		religion = catholic
 		size = 500
 		militancy = 5
 	}
 	soldiers = {
-		culture = mixtec
+		culture = zapotec
 		religion = catholic
 		size = 100
 		militancy = 5
 	}
 	farmers = {
-		culture = mixtec
+		culture = zapotec
 		religion = catholic
 		size = 9350
 		militancy = 5
 	}
 }
 
-#Xalapa-Enr√≠quez (75000/20000 POPS)
+#Xalapa-EnrÌquez (75000/20000 POPS)
 2163 = {
 	aristocrats = {
 		culture = mexican
 		religion = catholic
-		size = 425
+		size = 400
 	}
 	clergymen = {
 		culture = mexican
@@ -1357,32 +1374,32 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 25
+		size = 50
 	}
 	farmers = {
 		culture = mexican
 		religion = catholic
-		size = 1300
+		size = 6150
 	}
 	clergymen = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 50
 	}
 	artisans = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 900
 	}
 	soldiers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 200
 	}
 	farmers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
-		size = 16850
+		size = 12000
 	}
 }
 
@@ -1406,7 +1423,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 25
+		size = 50
 	}
 	farmers = {
 		culture = mexican
@@ -1431,7 +1448,17 @@
 	farmers = {
 		culture = nahua
 		religion = catholic
-		size = 10275
+		size = 3550
+	}
+	farmers = {
+		culture = zapotec
+		religion = catholic
+		size = 4000
+	}
+        farmers = {
+		culture = mayan
+		religion = catholic
+		size = 2700
 	}
 }
 
@@ -1465,22 +1492,22 @@
 		size = 15175
 	}
 	clergymen = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 100
 	}
 	artisans = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 200
 	}
 	soldiers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 100
 	}
 	farmers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = animist
 		size = 3700
 	}
@@ -1515,7 +1542,7 @@
 	artisans = {
 		culture = mexican
 		religion = catholic
-		size = 10200
+		size = 10000
 		militancy = 5
 	}
 
@@ -1528,7 +1555,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 650
+		size = 850
 		militancy = 5
 	}
 	farmers = {
@@ -1538,23 +1565,23 @@
 		militancy = 5
 	}
 	clergymen = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 100
 	}
 	artisans = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 550
 	}
 	soldiers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 125
 		militancy = 9
 	}
 	farmers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 34275
 	}
@@ -1588,29 +1615,29 @@
 		size = 21550
 	}
 	clergymen = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 100
 	}
 	artisans = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 650
 	}
 	soldiers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 150
 	}
 	farmers = {
-		culture = nahua #native_american_minor
+		culture = nahua
 		religion = catholic
 		size = 12125
 	}
 }
 
-#San Luis Potos√≠ y Guanajuato Region
-#San Luis Potos√≠ (315000/71000 POPS)
+#San Luis PotosÌ y Guanajuato Region
+#San Luis PotosÌ (315000/71000 POPS)
 2159 = {
 	aristocrats = {
 		culture = mexican
@@ -1725,7 +1752,7 @@
 	}
 }
 
-#Santiago de Quer√©taro (117000/36000 POPS)
+#Santiago de QuerÈtaro (117000/36000 POPS)
 2170 = {
 	aristocrats = {
 		culture = mexican
@@ -1810,22 +1837,22 @@
 	}
 
 	clergymen = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 100
 	}
 	artisans = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 100
 	}
 	soldiers = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 100
 	}
 	farmers = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 12000
 	}
@@ -1869,28 +1896,28 @@
 		size = 53000
 	}
 	clergymen = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 250
 	}
 	artisans = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 2200
 	}
 	soldiers = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 475
 	}
 	farmers = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 51000
 	}
 }
 
-#Chilpancingo de los Bravo (170000/44000 POPS)
+#Chilpancingo de los Bravos (170000/44000 POPS)
 2179 = {
 	aristocrats = {
 		culture = mexican
@@ -1900,22 +1927,22 @@
 	bureaucrats = {
 		culture = mexican
 		religion = catholic
-		size = 125
+		size = 100
 	}
 	officers = {
 		culture = mexican
 		religion = catholic
-		size = 25
+		size = 50
 	}
 	clergymen = {
 		culture = mexican
 		religion = catholic
-		size = 325
+		size = 300
 	}
 	artisans = {
 		culture = mexican
 		religion = catholic
-		size = 1150
+		size = 1000
 	}
 	soldiers = {
 		culture = mexican
@@ -1925,31 +1952,41 @@
 	farmers = {
 		culture = mexican
 		religion = catholic
-		size = 23250
+		size = 20000
 	}
 	clergymen = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
 		size = 100
 	}
 	artisans = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
-		size = 1050
+		size = 1000
 	}
 	soldiers = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
-		size = 225
+		size = 300
 	}
 	farmers = {
-		culture = nahua #tarascan
+		culture = nahua
 		religion = catholic
-		size = 19625
+		size = 5000
+	}
+        farmers = {
+		culture = zapotec
+		religion = catholic
+		size = 6000
+	}
+        farmers = {
+		culture = mixtec
+		religion = catholic
+		size = 9000
 	}
 }
 
-#M√©xico Region (2675000)
+#MÈxico Region (2675000)
 #ruled by Mexico 1836
 #Mexico City (395000/180000 POPS)
 2172 = {
@@ -2161,7 +2198,7 @@
 	farmers = {
 		culture = mexican
 		religion = catholic
-		size = 20800
+		size = 21600
 	}
 	clergymen = {
 		culture = nahua
@@ -2181,12 +2218,12 @@
 	farmers = {
 		culture = nahua
 		religion = catholic
-		size = 38800
+		size = 38000
 	}
 }
 
 #Puebla y Tlaxcala Region
-#Tlaxcala de Xicoht√©ncatl (80000/10000 POPS)
+#Tlaxcala de XicohtÈncatl (80000/10000 POPS)
 2173 = {
 	aristocrats = {
 		culture = mexican
@@ -2270,7 +2307,7 @@
 	farmers = {
 		culture = mexican
 		religion = catholic
-		size = 38550
+		size = 35550
 	}
 	clergymen = {
 		culture = nahua
@@ -2290,7 +2327,17 @@
 	farmers = {
 		culture = nahua
 		religion = catholic
-		size = 55375
+		size = 25000
+	}
+        farmers = {
+		culture = zapotec
+		religion = catholic
+		size = 5375
+	}
+        farmers = {
+		culture = mixtec
+		religion = catholic
+		size = 30000
 	}
 }
 
@@ -2334,28 +2381,38 @@
 		size = 15875
 	}
 	clergymen = {
-		culture = nahua #zapotec
+		culture = zapotec
 		religion = catholic
 		size = 350
 	}
 	artisans = {
-		culture = nahua #zapotec
+		culture = zapotec
 		religion = catholic
 		size = 4500
 	}
 	soldiers = {
-		culture = nahua #zapotec
+		culture = zapotec
 		religion = catholic
 		size = 700
 	}
 	farmers = {
-		culture = nahua #zapotec
+		culture = zapotec
 		religion = catholic
-		size = 65450
+		size = 50000
+	}
+        farmers = {
+		culture = nahua
+		religion = catholic
+		size = 5450
+	}
+        farmers = {
+		culture = mixtec
+		religion = catholic
+		size = 10000
 	}
 }
 
-#Juchit√°n de Zaragoza (100000/25000 POPS)
+#Juchit·n de Zaragoza (100000/25000 POPS)
 2178 = {
 	aristocrats = {
 		culture = mexican
@@ -2383,24 +2440,29 @@
 		size = 4055
 	}
 	clergymen = {
-		culture = nahua #zapotec
+		culture = zapotec
 		religion = catholic
 		size = 100
 	}
 	artisans = {
-		culture = nahua #zapotec
+		culture = zapotec
 		religion = catholic
 		size = 1100
 	}
 	soldiers = {
-		culture = nahua #zapotec
+		culture = zapotec
 		religion = catholic
-		size = 200
+		size = 900
 	}
 	farmers = {
-		culture = nahua #zapotec
+		culture = zapotec
 		religion = catholic
-		size = 18700
+		size = 15000
+	}
+        farmers = {
+		culture = mixtec
+		religion = catholic
+		size = 3000
 	}
 }
 
@@ -2426,12 +2488,12 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 50
+		size = 375
 	}
 	farmers = {
 		culture = mexican
 		religion = catholic
-		size = 2375
+		size = 2300
 	}
 	clergymen = {
 		culture = mayan
@@ -2446,16 +2508,21 @@
 	soldiers = {
 		culture = mayan
 		religion = catholic
-		size = 125
+		size = 900
 	}
 	farmers = {
 		culture = mayan
 		religion = catholic
-		size = 11225
+		size = 8000
+	}
+        farmers = {
+		culture = nahua
+		religion = catholic
+		size = 2200
 	}
 }
 
-#San Marcos Tuxtla / Tuxtla Guti√©rrez (125000/21000 POPS)
+#San Marcos Tuxtla / Tuxtla GutiÈrrez (125000/21000 POPS)
 2181 = {
 	aristocrats = {
 		culture = mexican
@@ -2500,22 +2567,32 @@
 	artisans = {
 		culture = mayan
 		religion = catholic
-		size = 850
+		size = 950
 	}
 	soldiers = {
 		culture = mayan
 		religion = catholic
-		size = 175
+		size = 1000
 	}
 	farmers = {
 		culture = mayan
 		religion = catholic
-		size = 15925
+		size = 9000
+	}
+        farmers = {
+		culture = mixtec
+		religion = catholic
+		size = 1000
+	}
+        farmers = {
+		culture = nahua
+		religion = catholic
+		size = 5000
 	}
 }
 
 #ruled by FRCA in 1836
-#Soconusco / Tapachula de C√≥rdova y Ord√≥√±ez (15000/9000 POPS)
+#Soconusco / Tapachula de CÛrdova y OrdÛÒez (15000/9000 POPS)
 2182 = {
 	aristocrats = {
 		culture = mexican
@@ -2552,7 +2629,7 @@
 	clergymen = {
 		culture = central_american
 		religion = catholic
-		size = 25
+		size = 75
 		militancy = 9
 	}
 	artisans = {
@@ -2567,12 +2644,6 @@
 		size = 1000
 		militancy = 5
 	}
-
-	clergymen = {
-		culture = mayan
-		religion = catholic
-		size = 50
-	}
 	farmers = {
 		culture = mayan
 		religion = catholic
@@ -2581,9 +2652,9 @@
 	}
 }
 
-#Yucat√°n Region (550000)
+#Yucat·n Region (550000)
 #ruled by Mexico 1836
-#M√©rida (280000/75000 POPS)
+#MÈrida (280000/75000 POPS)
 2183 = {
 	aristocrats = {
 		culture = mexican
@@ -2653,7 +2724,7 @@
 	}
 }
 
-#San Francisco de Campeche (180000/27000 POPS)
+#San Francisco de Campeche (160000/27000 POPS)
 2184 = {
 	aristocrats = {
 		culture = mexican
@@ -2702,7 +2773,41 @@
 	}
 }
 
-#Bacalar / Chetumal (90000/23000 POPS)
+#San Antonio (20000/5000 POPS)
+3474 = {
+	aristocrats = {
+		culture = mexican
+		religion = catholic
+		size = 50
+	}
+	clergymen = {
+		culture = mexican
+		religion = catholic
+		size = 100
+	}
+	artisans = {
+		culture = mexican
+		religion = catholic
+		size = 300
+	}
+	farmers = {
+		culture = mexican
+		religion = catholic
+		size = 800
+	}
+	artisans = {
+		culture = mayan
+		religion = catholic
+		size = 550
+	}
+	farmers = {
+		culture = mayan
+		religion = catholic
+		size = 3200
+	}
+}
+
+#Bacalar / Chetumal (60000/23000 POPS)
 2185 = {
 	aristocrats = {
 		culture = mexican
@@ -2748,5 +2853,53 @@
 		culture = mayan
 		religion = catholic
 		size = 19740
+	}
+}
+
+#Chan Santa Cruz (30000/10000 POPS)
+3473 = {
+	aristocrats = {
+		culture = mexican
+		religion = catholic
+		size = 50
+	}
+	clergymen = {
+		culture = mexican
+		religion = catholic
+		size = 100
+	}
+	artisans = {
+		culture = mexican
+		religion = catholic
+		size = 300
+	}
+	farmers = {
+		culture = mexican
+		religion = catholic
+		size = 550
+	}
+	clergymen = {
+		culture = mayan
+		religion = animist
+		size = 150
+                militancy = 8
+	}
+        artisans = {
+		culture = mayan
+		religion = animist
+		size = 1000
+                militancy = 8
+	}
+        soldiers = {
+		culture = mayan
+		religion = animist
+		size = 850
+                militancy = 8
+	}
+	farmers = {
+		culture = mayan
+		religion = animist
+		size = 7000
+                militancy = 8
 	}
 }

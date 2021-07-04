@@ -15,7 +15,6 @@ country_event = {
 			year = 1910
 			alliance_with = ENG
 			alliance_with = FRA
-			alliance_with = BOR
 			alliance_with = RUS
 			alliance_with = GER
 			alliance_with = GCF
@@ -1241,21 +1240,18 @@ country_event = {
 			any_pop = {
 				limit = {
 					OR = {
-						culture = turkish
-						culture = kurdish
+						has_pop_culture = turkish
+						has_pop_culture = kurdish
 					}
-					pop_majority_ideology = fascist
 				}
 				reduce_pop = 0.95
-				militancy = 5
+				scaled_militancy = { ideology = fascist factor = 5 }
 			}
 			any_pop = {
 				limit = {
 					NOT = {
-						OR = {
-							has_pop_religion = sunni
-							has_pop_religion = shiite
-						}
+						has_pop_religion = sunni
+						has_pop_religion = shiite
 					}
 				}
 				reduce_pop = 0.85
@@ -1279,21 +1275,18 @@ country_event = {
 			any_pop = {
 				limit = {
 					OR = {
-						culture = turkish
-						culture = kurdish
+						has_pop_culture = turkish
+						has_pop_culture = kurdish
 					}
-					pop_majority_ideology = fascist
 				}
 				reduce_pop = 1.02
-				militancy = -2
+				scaled_militancy = { ideology = fascist factor = -2 }
 			}
 			any_pop = {
 				limit = {
 					NOT = {
-						OR = {
-							has_pop_religion = sunni
-							has_pop_religion = shiite
-						}
+						has_pop_religion = sunni
+						has_pop_religion = shiite
 					}
 				}
 				reduce_pop = 0.45
@@ -1932,7 +1925,7 @@ country_event = {
 						region = TUR_876 #Ankara
 						region = TUR_882 #Trabizond
 						region = TUR_885 #Kars
-						region = TUR_887 #Erzurum
+						region = TUR_888 #Erzincan
 						region = TUR_890 #Van
 						region = TUR_893 #Diyarbakir
 						region = TUR_894 #Adana
@@ -1957,7 +1950,7 @@ country_event = {
 					region = TUR_876 #Ankara
 					region = TUR_882 #Trabizond
 					region = TUR_885 #Kars
-					region = TUR_887 #Erzurum
+					region = TUR_888 #Erzincan
 					region = TUR_890 #Van
 					region = TUR_893 #Diyarbakir
 					region = TUR_894 #Adana
@@ -3147,6 +3140,19 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA986501"
+		relation = { who = BHT value = -400 }
+		war = {
+			target = BHT
+			attacker_goal = { casus_belli = acquire_all_cores }
+			defender_goal = { casus_belli = humiliate }
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "EVTOPTB986501"
+		prestige = -5
+		BHT = { any_owned = { remove_core = PER } }
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -3202,6 +3208,9 @@ country_event = {
 					tag = BNB
 					tag = BDN
 					tag = BTL
+					tag = RDL
+					tag = MKN
+					tag = URM
 				}
 				# NOT = { tag = BHT }
 				ai = yes
@@ -3209,6 +3218,7 @@ country_event = {
 			}
 			annex_to = BHT
 		}
+		PER = { country_event = 986501 }
 		BHT = {
 			badboy = 1
 			set_country_flag = kafir_massacre
@@ -3223,29 +3233,9 @@ country_event = {
 		}
 		war = {
 			target = BHT
-			attacker_goal = { casus_belli = annex_core_country state_province_id = 892 }
-			attacker_goal = { casus_belli = acquire_core_state state_province_id = 890 }
-			attacker_goal = { casus_belli = acquire_core_state state_province_id = 892 }
+			attacker_goal = { casus_belli = acquire_all_cores }
 			defender_goal = { casus_belli = humiliate }
 		}
-
-		#random_country = {
-		#	limit = { tag = PER ai = yes exists = yes }
-		#	relation = { who = BHT value = -400 }
-		#	country_event = 986501
-		#	war = {
-		#	target = BHT
-		#		attacker_goal = {
-		#			casus_belli = acquire_core_state
-		#			state_province_id = 1111
-		#		}
-		#		attacker_goal = {
-		#			casus_belli = acquire_core_state
-		#			state_province_id = 1118
-		#		}
-		#		defender_goal = { casus_belli = humiliate }
-		#	}
-		#}
 
 		ai_chance = {
 			factor = 100
@@ -3276,6 +3266,9 @@ country_event = {
 					tag = BNB
 					tag = BDN
 					tag = BTL
+					tag = RDL
+					tag = MKN
+					tag = URM
 				}
 				# NOT = { tag = BHT }
 				ai = yes
@@ -3283,6 +3276,7 @@ country_event = {
 			}
 			annex_to = BHT
 		}
+		PER = { country_event = 986501 }
 		BHT = {
 			badboy = 1
 			set_country_flag = kafir_massacre
@@ -3323,6 +3317,9 @@ country_event = {
 					tag = BNB
 					tag = BDN
 					tag = BTL
+					tag = RDL
+					tag = MKN
+					tag = URM
 				}
 				# NOT = { tag = BHT }
 				ai = yes
@@ -3330,6 +3327,7 @@ country_event = {
 			}
 			annex_to = BHT
 		}
+		PER = { country_event = 986501 }
 		BHT = {
 			badboy = 1
 			set_country_flag = kafir_massacre
@@ -3452,12 +3450,15 @@ country_event = {
 		clr_country_flag = return_persian_lands_on_finish
 		any_owned = {
 			limit = {
-				OR = {
-					is_core = SRN
-					is_core = BHT
-					is_core = BNB
-					is_core = BDN
-					is_core = BTL
+			OR = {
+				is_core = SRN
+				is_core = BHT
+				is_core = BNB
+				is_core = BDN
+				is_core = BTL
+				is_core = RDL
+				is_core = MKN
+				is_core = URM
 				}
 			}
 			any_pop = {
@@ -3478,6 +3479,7 @@ country_event = {
 				OR = {
 					is_core = RDL
 					is_core = MKN
+					is_core = URM
 				}
 			}
 			secede_province = PER
@@ -3486,8 +3488,11 @@ country_event = {
 		BTL = { all_core = { remove_core = BTL } }
 		BDN = { all_core = { remove_core = BDN } }
 		BHT = { all_core = { remove_core = BHT } }
-		BNB = { all_core = { remove_core = BNB remove_core = PER } }
+		BNB = { all_core = { remove_core = BNB } }
 		SRN = { all_core = { remove_core = SRN } }
+		RDL = { all_core = { remove_core = RDL } }
+		MKN = { all_core = { remove_core = MKN } }
+		URM = { all_core = { remove_core = URM } }
 	}
 }
 

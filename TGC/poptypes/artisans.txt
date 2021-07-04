@@ -138,6 +138,8 @@ country_migration_target = {
 			government = democracy
 			government = presidential_dictatorship
 			government = hms_government
+			government = dominion
+			government = federal_democracy
 		}
 	}
 
@@ -154,9 +156,9 @@ country_migration_target = {
 			primary_culture = north_german
 			primary_culture = south_german
 		}
-		OR = {
+		#OR = {
 			government = dominion
-		}
+		#}
 	}
 
 	modifier = {
@@ -173,6 +175,8 @@ country_migration_target = {
 			government = democracy
 			government = presidential_dictatorship
 			government = hms_government
+			government = dominion
+			government = federal_democracy
 		}
 	}
 }
@@ -239,7 +243,9 @@ migration_target = {
 		}
 		state_scope = {
 			OR = {
+				# Audax Validator "." Ignore_NEXT
 				is_accepted_culture = yes
+				# Audax Validator "." Ignore_NEXT
 				is_primary_culture = yes
 			}
 			work_available = { worker = craftsmen }
@@ -320,7 +326,12 @@ migration_target = {
 		factor = 0.1
 		terrain = small_island
 	}
-
+	
+	modifier = {
+		factor = 0.03
+		terrain = caribbean_island
+	}
+	
 	modifier = {
 		factor = 0.01
 		terrain = coral_island
@@ -1016,7 +1027,10 @@ promote_to = {
 			factor = -1
 			state_scope = {
 				has_factories = no
-				NOT = { total_pops = 200000 }
+				NOT = {
+					# Audax Validator "." Ignore_NEXT
+					total_pops = 200000
+				}
 			}
 		}
 		modifier = {

@@ -397,6 +397,12 @@ EVTOPTB2000000107;We shall adopt the widely used Cyrilic alphabet the system of 
 EVTOPTC2000000107;We shall adopt the Hellenic alphabet the system of antiquity.;;;;;;;;;;;;;x
 EVTOPTD2000000107;We shall adopt widely used Arabic Abjad the system of islam.;;;;;;;;;;;;;x
 EVTOPTL2000000107;More Options;;;;;;;;;;;;;x
+EVTNAME2000000109;Craftsmen Exploit Salvage (Part 1);;;;;;;;;;;;;
+EVTDESC2000000109;This event converts all non-core/non-accepted craftsmen into farmers if they are on your cores. Part 2 will spawn in 3 days, be sure to select this option FIRST.;;;;;;;;;;;;;
+EVTNAME2000000110;Craftsmen Exploit Salvage (Part 2);;;;;;;;;;;;;
+EVTDESC2000000110;This event converts all 100% unemployed farmers into laborers.;;;;;;;;;;;;;
+EVTOPTA2000000109;USE THIS OPTION FIRST.;;;;;;;;;;;;;x
+EVTOPTA2000000110;USE THIS OPTION SECOND.;;;;;;;;;;;;;x
 EVTNAME2000000115;Greek Language Question!;;;;;;;;;;;;;x
 EVTDESC2000000115;As Greece marches towards modernity, the question of its national language has become a contentious topic. The Great Greek Language Debate brings together scholars, politicians, and intellectuals from across the nation to discuss the future of the Greek language. The debate primarily revolves around three prominent linguistic forms: Demotic Greek, Katharevousa Greek, and Ancient Greek.;;;;;;;;;;;;;x
 EVTOPTA2000000115;The proponents of Demotic Greek argue passionately for its adoption as the national language. They assert that Demotic Greek, being the language of the common people, is more accessible, flexible, and reflective of contemporary Greek society. Its advocates highlight its rich literary tradition, its ability to adapt to modernity, and its potential to unite the nation.;;;;;;;;;;;;;x

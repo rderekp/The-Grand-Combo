@@ -6181,6 +6181,10 @@ sacrifice_cd = {
 	icon = 21
 }
 
+craftsmen_fix_cooldown = {
+    	icon = 12
+}
+
 Dimotiki = {
 	core_pop_militancy_modifier = -0.02
 	global_pop_militancy_modifier = 0.02

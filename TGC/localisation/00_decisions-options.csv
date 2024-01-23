@@ -1,11 +1,11 @@
 CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;ITALIAN;SWEDISH;CZECH;HUNGARIAN;DUTCH;PORTUGUESE;RUSSIAN;FINNISH;x
 1836_initial_setup_desc;A few changes that can only be made this way.;;;;;;;;;;;;;x
 1836_initial_setup_title;AI: 1836 Setup;;;;;;;;;;;;;x
-option_disable_anarcho_liberals_desc;This tweak will stop anarcho-liberal ideology from spawning. It may help performance a bit. Some people think they are too unrealistic for them, so they might want to disable it. I didn�t test any balance issues that might arise without them in the game though.;;;;;;;;;;;;;x
+option_disable_anarcho_liberals_desc;This tweak will stop anarcho-liberal ideology from spawning. It may help performance a bit. Some people think they are too unrealistic for them, so they might want to disable it. I didnâ€™t test any balance issues that might arise without them in the game though.;;;;;;;;;;;;;x
 option_disable_anarcho_liberals_title;Option: Disable Anarcho-Liberal Ideology;;;;;;;;;;;;;x
 option_disable_assimilation_events_desc;Disables the immigration into province events such as Ethnic Flavour or Intermarriage as they can become spammy and not everyone likes them.;;;;;;;;;;;;;x
 option_disable_assimilation_events_title;Option: Disable Immigrant Assimilation Events;;;;;;;;;;;;;x
-option_disable_bankruptcy_events_desc;Disabling the Bankruptcy events will stop you from getting the CB and effects that happen when a country goes bankrupt on you. It won�t stop the event for the AI nor will it stop countries going bankrupt.;;;;;;;;;;;;;x
+option_disable_bankruptcy_events_desc;Disabling the Bankruptcy events will stop you from getting the CB and effects that happen when a country goes bankrupt on you. It wonâ€™t stop the event for the AI nor will it stop countries going bankrupt.;;;;;;;;;;;;;x
 option_disable_bankruptcy_events_title;Option: Disable Bankruptcy Events;;;;;;;;;;;;;x
 option_disable_colonial_railroading_desc;Within TGC are a number of flavour events and decisions which help both the AI and the player to follow a historical colonisation path in Africa and Asia. You may prefer to play without these leading to more unpredictable colonisation.;;;;;;;;;;;;;x
 option_disable_colonial_railroading_title;Option: Disable Colonial Railroading;;;;;;;;;;;;;x
@@ -24,7 +24,7 @@ option_disable_hpm_crisis_title;Option: Enable Crisis From The Start;;;;;;;;;;;;
 option_disable_microstates_desc;Activate this if you do not want the microstates of Andorra, Liechtenstein, Monaco, San Marino, Couto Misto, Mt. Athos,and Neutral Moresnet in the game. It removes their cores and annexes them to the nearest country.;;;;;;;;;;;;;x
 option_disable_microstates_title;Option: Disable Microstates;;;;;;;;;;;;;x
 option_disable_options_desc;This will hide all optional tweaks to vanilla TGC. You still have until 1837 to change your mind though.;;;;;;;;;;;;;x
-option_disable_options_title;Hide �Options� Decisions;;;;;;;;;;;;;x
+option_disable_options_title;Hide â€˜Optionsâ€™ Decisions;;;;;;;;;;;;;x
 option_disable_starting_party_loyalty_desc;This option will remove all starting party loyalty.;;;;;;;;;;;;;x
 option_disable_starting_party_loyalty_title;Option: Remove Starting Party Loyalty;;;;;;;;;;;;;x
 option_disable_uk_isolation_desc;Historically the UK did not ally major european powers, and so in TGC the UK is forced to break alliances with any Great Powers who aren't Portugal, Belgium, Japan or the Ottomans. You may wish to turn this off.;;;;;;;;;;;;;x
@@ -35,7 +35,7 @@ option_disable_leader_events_desc;Disable events for political leader modifiers.
 option_disable_leader_events_title;Option: Disable Leader Events;;;;;;;;;;;;;x
 option_disable_trade_policy_desc;Disable Choose Trade Policy decisions for all countries (as opposed to choosing disable in the event which only disables them for you).;;;;;;;;;;;;;x
 option_disable_trade_policy_title;Option: Disable Trade Policy decisions;;;;;;;;;;;;;x
-option_disable_workplace_events_desc;A few province events related to the workplace, such as �The Old Man and the Sea�, �All the Tea in PROVINCENAME� and �Blood and Iron Mine� can get quite spammy. I increased the MTTH and tried to balance it out, adding more requirements, but if you still find it spammy, you can use this option to completely disable them. Keep in mind that I didn�t test balance with these events disabled or anything like this, and this might help improve performance a little bit. A few events that only trigger because you have no or low workplace safety standards are still in though. Pass workplace reforms if you want to get rid of them.;;;;;;;;;;;;;x
+option_disable_workplace_events_desc;A few province events related to the workplace, such as â€˜The Old Man and the Seaâ€™, â€˜All the Tea in PROVINCENAMEâ€™ and â€˜Blood and Iron Mineâ€™ can get quite spammy. I increased the MTTH and tried to balance it out, adding more requirements, but if you still find it spammy, you can use this option to completely disable them. Keep in mind that I didnâ€™t test balance with these events disabled or anything like this, and this might help improve performance a little bit. A few events that only trigger because you have no or low workplace safety standards are still in though. Pass workplace reforms if you want to get rid of them.;;;;;;;;;;;;;x
 option_disable_workplace_events_title;Option: Disable Workplace Events;;;;;;;;;;;;;x
 option_disable_warship_commissions_desc;Disable the decisions to commission a warship from another country or take a warship commission from another country.;;;;;;;;;;;;;x
 option_disable_warship_commissions_title;Option: Disable Warship Commission decisions;;;;;;;;;;;;;x
@@ -43,11 +43,14 @@ option_enable_lucky_nations_desc;Sometimes in this world, nations seem to be ble
 option_enable_lucky_nations_title;Option: Enable Lucky Nations;;;;;;;;;;;;;x
 option_enable_money_hoarder_desc;Money hoarder modifiers will trigger when a country has too much money in its stockpile and reduce its tax efficiency, forcing money back into the economy.;;;;;;;;;;;;;x
 option_enable_money_hoarder_title;Option: Enable Money Hoarder Modifiers;;;;;;;;;;;;;x
-option_enable_options_desc;This decision shows all optional decisions to tweak and change the game�s behaviour from vanilla TGC. This, along with all decisions it enables, will disappear January 1st 1837 to reduce clutter, so you have a year in-game to pick and choose what you want. Once a tweak is chosen, you can�t disable it anymore, so if you mis-click you need to edit your save or start a new game.;;;;;;;;;;;;;x
-option_enable_options_title;Show �Options� Decisions;;;;;;;;;;;;;x
+option_enable_options_desc;This decision shows all optional decisions to tweak and change the gameâ€™s behaviour from vanilla TGC. This, along with all decisions it enables, will disappear January 1st 1837 to reduce clutter, so you have a year in-game to pick and choose what you want. Once a tweak is chosen, you canâ€™t disable it anymore, so if you mis-click you need to edit your save or start a new game.;;;;;;;;;;;;;x
+option_enable_options_title;Show â€˜Optionsâ€™ Decisions;;;;;;;;;;;;;x
+option_enable_overrides_desc;This decision allows players to access override decisions which give them greater control of their country's borders and conscription by bypassing some vanilla mechanics.;;;;;;;;;;;;;x
+option_enable_options_desc;This decision shows all optional decisions to tweak and change the game’s behaviour from vanilla TGC. This, along with all decisions it enables, will disappear January 1st 1837 to reduce clutter, so you have a year in-game to pick and choose what you want. Once a tweak is chosen, you can’t disable it anymore, so if you mis-click you need to edit your save or start a new game.;;;;;;;;;;;;;x
+option_enable_options_title;Show ‘Options’ Decisions;;;;;;;;;;;;;x
 option_enable_overrides_desc;This decision allows players to access override decisions which give them greater control of their country's laws regarding borders and conscription. This Option also allows you to enact Government Campaigns, where you can invest a part of your monthly budget to influence research, infamy, migration, population growth and others at the cost of money. Beware: Money is deducted on monthly basis from your treasury. Pay attention to it lest you go bankrupt.;;;;;;;;;;;;;x
 option_enable_overrides_title;Option: Enable Override Decisions;;;;;;;;;;;;;x
-option_enable_spectator_mode_desc;Disable �Winds of Westernization� events for spectator games as an uncivilized nation.;;;;;;;;;;;;;x
+option_enable_spectator_mode_desc;Disable â€˜Winds of Westernizationâ€™ events for spectator games as an uncivilized nation.;;;;;;;;;;;;;x
 option_enable_spectator_mode_title;Option: Set Up Game In Spectator Mode;;;;;;;;;;;;;x
 option_enable_usa_gtfo_africa_desc;With this option, AI USA will NOT get events to reduce its influence in Africa, as historically the USA was not interested in Africa beyond Liberia. This will not affect a player USA. Keep in mind if you enable this, you will likely see weird Yankee things in Africa.;;;;;;;;;;;;;x
 option_enable_usa_gtfo_africa_title;Option: Enable USA influence in Africa;;;;;;;;;;;;;x
@@ -57,7 +60,7 @@ option_mobilisation_limiter_desc;Enable the optional mechanic that limits the si
 option_mobilisation_limiter_title;Option: Enable Mobilisation Limiter;;;;;;;;;;;;;x
 override_change_border_policy_desc;Our immigration laws and our policies towards the borders of our country are ours and ours alone to decide, and we think it might be time to revise a few rules.;;;;;;;;;;;;;x
 override_change_border_policy_title;Change our Border Policy;;;;;;;;;;;;;x
-override_close_change_border_policy_desc;We decided that our country is good as it is and there won�t be any changes in our immigration policies.;;;;;;;;;;;;;x
+override_close_change_border_policy_desc;We decided that our country is good as it is and there wonâ€™t be any changes in our immigration policies.;;;;;;;;;;;;;x
 override_close_change_border_policy_title;Hide the Border Policy Options;;;;;;;;;;;;;x
 override_disable_override_desc;This hides the overide decisions from view to reduce clutter.;;;;;;;;;;;;;x
 override_disable_override_title;Hide 'Override' Decisions;;;;;;;;;;;;;x
@@ -83,11 +86,11 @@ override_faster_infamy_removal_title;Commence a Diplomatic Offensive;;;;;;;;;;;;
 override_faster_infamy_removal_desc;Instruct our Foreign Minister to commence a campaign to improve our standing in the world;;;;;;;;;;;;;x
 override_faster_infamy_removal_remove_title;Stop Diplomatic Efforts;;;;;;;;;;;;;x
 override_faster_infamy_removal_remove_desc;This will stop reducing infamy at a faster rate.;;;;;;;;;;;;;x
-override_policy_closed_border_desc;A closed border is a border that prevents movement of people between different jurisdictions with limited or no exceptions associated with this movement. These borders normally have fences or walls in which any gates or border crossings are closed and if these border gates are opened, they generally only allow movement of people in exceptional circumstances. In case of emigration as well as immigrations, departing ships are inspected for illegal emigrants. These controls and checks come at the cost of an increased demand from the State�s bureaucracy.;;;;;;;;;;;;;x
+override_policy_closed_border_desc;A closed border is a border that prevents movement of people between different jurisdictions with limited or no exceptions associated with this movement. These borders normally have fences or walls in which any gates or border crossings are closed and if these border gates are opened, they generally only allow movement of people in exceptional circumstances. In case of emigration as well as immigrations, departing ships are inspected for illegal emigrants. These controls and checks come at the cost of an increased demand from the Stateâ€™s bureaucracy.;;;;;;;;;;;;;x
 override_policy_closed_border_title;Close the Borders;;;;;;;;;;;;;x
-override_policy_immigration_quota_desc;A conditionally open border is a border that allows movement of people across the border that meet a special set of conditions. This special set of conditions which limits the application of border controls that would normally otherwise apply could be defined by an international agreement or international law, or the special conditions could be defined by a regulation or law of the jurisdiction that the people are claiming the right to enter. Conditionally open borders generally requires a claim to be submitted from the people who are proposing to enter the new jurisdiction stating why they meet the special conditions which allow entry into the new jurisdiction. In the case of our country, quotas mean that no foreigners that fail a literacy test in their own language or are nationals of countries that were or are at war with our nation are allowed. These controls and checks come at the cost of an increased demand from the State�s bureaucracy.;;;;;;;;;;;;;x
+override_policy_immigration_quota_desc;A conditionally open border is a border that allows movement of people across the border that meet a special set of conditions. This special set of conditions which limits the application of border controls that would normally otherwise apply could be defined by an international agreement or international law, or the special conditions could be defined by a regulation or law of the jurisdiction that the people are claiming the right to enter. Conditionally open borders generally requires a claim to be submitted from the people who are proposing to enter the new jurisdiction stating why they meet the special conditions which allow entry into the new jurisdiction. In the case of our country, quotas mean that no foreigners that fail a literacy test in their own language or are nationals of countries that were or are at war with our nation are allowed. These controls and checks come at the cost of an increased demand from the Stateâ€™s bureaucracy.;;;;;;;;;;;;;x
 override_policy_immigration_quota_title;Implement Immigration Quotas;;;;;;;;;;;;;x
-override_policy_open_borders_desc;An open border is a border that enables free movement of people between different jurisdictions with limited or no restrictions on movement. A border may be an open border due to intentional legislation allowing free movement of people across the border, or a border may be an open border due to lack of adequate enforcement or adequate supervision of the border. One of the advantages of such a policy is that it requires little to none effort from the State�s bureaucracy to keep control over immigrants.;;;;;;;;;;;;;x
+override_policy_open_borders_desc;An open border is a border that enables free movement of people between different jurisdictions with limited or no restrictions on movement. A border may be an open border due to intentional legislation allowing free movement of people across the border, or a border may be an open border due to lack of adequate enforcement or adequate supervision of the border. One of the advantages of such a policy is that it requires little to none effort from the Stateâ€™s bureaucracy to keep control over immigrants.;;;;;;;;;;;;;x
 override_policy_open_borders_title;Abolish Immigration Restrictions;;;;;;;;;;;;;x
 override_rgo_change_farming_desc;This decision converts 1 province to a farming RGO of your choosing. The options are Wool, Timber, Cotton, Cattle, Fish, Fruit and Grain. For whichever you select, one province currently producing one of the other resources will be converted. This can be done once every 12.5 years.;;;;;;;;;;;;;x
 override_rgo_change_farming_title;Change Farming RGO;;;;;;;;;;;;;x
@@ -101,21 +104,21 @@ utility_disable_utility_desc;This will hide the utility decisions.;;;;;;;;;;;;;x
 utility_disable_utility_title;Hide 'Utility' Decisions;;;;;;;;;;;;;x
 utility_enable_utility_desc; The decision shows a mix of tools and decisions to facilitate small changes and fixes during gameplay.;;;;;;;;;;;;;x
 utility_enable_utility_title;Show 'Utility' Decisions;;;;;;;;;;;;;x
-utility_popreduction_decisions_disable_desc;The 'Global Pop Reduction' decisions will disappear from this game session and won�t reappear again. You won�t be able to use these decisions again for this game.;;;;;;;;;;;;;x
+utility_popreduction_decisions_disable_desc;The 'Global Pop Reduction' decisions will disappear from this game session and wonâ€™t reappear again. You wonâ€™t be able to use these decisions again for this game.;;;;;;;;;;;;;x
 utility_popreduction_decisions_disable_title;Disable 'Global Pop Reduction' decisions;;;;;;;;;;;;;x
 utility_popreduction_decisions_hide_desc;Your decision list will now be uncluttered.;;;;;;;;;;;;;x
 utility_popreduction_decisions_hide_title;Hide 'Global Pop Reduction' decisions;;;;;;;;;;;;;x
 utility_popreduction_decisions_show_desc;The 'Global Pop Reduction' decisions will reduce all the pops in the world by a specific factor. This can help increase performance on low-end machines but can also cause unpredictable issues with mechanics that depend on specific pop size thresholds. Use at your own risk.;;;;;;;;;;;;;x
 utility_popreduction_decisions_show_title;Show 'Global Pop Reduction' decisions;;;;;;;;;;;;;x
-utility_release_vassal_desc;The �Release Vassal� Menu will open allowing you to choose what nation to revoke the vassalage of.;;;;;;;;;;;;;x
-utility_release_vassal_title;Open �Release Vassal� Menu;;;;;;;;;;;;;x
-utility_return_cores_desc;The �Return Cores� Menu will open allowing you to choose what nation to return cores to.;;;;;;;;;;;;;x
+utility_release_vassal_desc;The â€˜Release Vassalâ€™ Menu will open allowing you to choose what nation to revoke the vassalage of.;;;;;;;;;;;;;x
+utility_release_vassal_title;Open â€˜Release Vassalâ€™ Menu;;;;;;;;;;;;;x
+utility_return_cores_desc;The â€˜Return Coresâ€™ Menu will open allowing you to choose what nation to return cores to.;;;;;;;;;;;;;x
 utility_return_cores_title;Open 'Return Cores' Menu;;;;;;;;;;;;;x
 utility_tech_school_close_desc;We are still not decided on the direction our nation research should take.;;;;;;;;;;;;;x
 utility_tech_school_close_title;Hide 'Choose A Tech School' decisions;;;;;;;;;;;;;x
 utility_tech_school_open_desc;If we are to advance as a nation, we need to pick a direction for our research.;;;;;;;;;;;;;x
 utility_tech_school_open_title;Choose A Tech School;;;;;;;;;;;;;x
-utility_turn_off_vassal_payments_desc;Our coffers are full enough and members of the cabinet have put forward the proposal of exempting our vassals, not the substates, from contributing to $COUNTRY$�s treasury. This tax break would boost our relations with them in the short term, but wouldn�t benefit our finances in any way.;;;;;;;;;;;;;x
+utility_turn_off_vassal_payments_desc;Our coffers are full enough and members of the cabinet have put forward the proposal of exempting our vassals, not the substates, from contributing to $COUNTRY$â€™s treasury. This tax break would boost our relations with them in the short term, but wouldnâ€™t benefit our finances in any way.;;;;;;;;;;;;;x
 utility_turn_off_vassal_payments_title;Exempt Vassals from Contributing to our Treasury;;;;;;;;;;;;;x
 utility_turn_on_vassal_payments_desc;The earlier tax break offered to vassals has run its course. We need that every vassal of $COUNTRY$ to do their part and contribute to the maintenance of $COUNTRY_ADJ$ glory.;;;;;;;;;;;;;x
 utility_turn_on_vassal_payments_title;Oblige Vassals to Contribute to our Treasury;;;;;;;;;;;;;x
@@ -137,3 +140,5 @@ override_hide_dm_title;Show Direct Migration Control;;;;;;;;;;;;;x
 override_hide_dm_desc;This will open the decision menu that lets you control your Direct Migration Campaigns. To learn more how DM works, once you enable the menu, enact decision "Immigration Options" and choose the wikipedia option (How does this work again).;;;;;;;;;;;;;x
 override_show_dm_title;Hide Direct Migration Control;;;;;;;;;;;;;x
 override_show_dm_desc;This decision exists so you can declutter your decision tab after setting your preferences. Once you wish to stop the campaign, simply show the decisions again and stop the campaign via Immigration Options event.;;;;;;;;;;;;;x
+craftsmen_fix_desc;Fix the craftsmen and bureaucrat bugs. The craftsmen bug is when you have a province that has craftsmen of a non-accepted culture and none of an accepted culture. It forces all promoting pops to become the culture of the craftsmen. The bureaucrats bug is even more annoying: bureaucrats of a non-accepted culture get payed by your government but don't add to administration efficiency, meaning that if that you're just throwing away money.;;;;;;;;;;;;;
+craftsmen_fix_title;Craftsmen & Bureaucrats bug fix;;;;;;;;;;;;;

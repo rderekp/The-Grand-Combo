@@ -1302,3 +1302,11 @@ ap_zom_nerf = {
 	tax_efficiency = -10
 	import_cost = 10
 }
+
+## Alice
+
+playing_alice = {
+	trigger = { has_global_flag = project_alice }
+	pop_militancy_modifier = -0.06
+	pop_consciousness_modifier = -0.1
+}

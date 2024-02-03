@@ -1,0 +1,178 @@
+country_event = {
+		id = 2000000115
+		title = "EVTNAME2000000115" #Greek Language
+		desc = "EVTDESC2000000115" # Greek Language
+		picture = "greek_language_event"
+		is_triggered_only  = yes
+		option = {
+			name = "EVTOPTA2000000115" #Choose an Official Version of the Language Dimotiki
+			prestige = 5
+			add_country_modifier = {name = Dimotiki duration = -1 }
+			add_country_modifier = {name = Language_Debate duration = 1800 }
+			remove_country_modifier = Disglosia
+			}
+		option = {
+			name = "EVTOPTB2000000115" #Choose an Official Version of the Language Katharevousa
+			prestige = 5
+			add_country_modifier = {name = Katharevousa duration = -1 }
+			add_country_modifier = {name = Language_Debate duration = 1800 }
+			remove_country_modifier = Disglosia
+			}
+		option = {
+			name = "EVTOPTC2000000115" #Choose an Official Version of the Language Ancient Greek (Koini Greek)
+			prestige = 5
+			add_country_modifier = {name = Koini_Greek1 duration = -1 }
+			add_country_modifier = {name = Language_Debate duration = 1800 }
+			remove_country_modifier = Disglosia
+			set_country_flag = koini1
+			}
+	}
+	country_event = {
+		id = 2000000116
+		title = "EVTNAME2000000116" #Choose a Writing System
+		desc = "EVTDESC2000000116" # Cool shit
+		picture = "greek_language_event"
+		fire_only_once = yes		
+		trigger = {
+			year = 1880
+			NOT = {has_country_flag= greek_language_debate}
+		}
+		mean_time_to_happen = {
+			days = 1
+		}
+		option = {
+			name = "EVTOPTA2000000116" #Not Decision Taken
+			add_country_modifier = {name = Disglosia duration = -1 }
+		}
+	}
+
+	country_event = {
+		id = 2000000117
+		title = "EVTNAME2000000117" #Koini Weakening
+		desc = "EVTDESC2000000117" # Cool shit
+		picture = "church_slavonic"	
+		trigger = {
+			OR = { 
+			has_country_flag = koini1
+			has_country_flag = koini3
+			}
+			OR = { 
+				AND = {
+					NOT = {exists = BUL}
+					exists = ALB
+					}
+				AND = {
+					NOT = {exists = ALB}
+					exists = BUL
+					}
+			}
+		}
+		mean_time_to_happen = {
+			days = 1
+		}
+		option = {
+			name = "EVTOPTA2000000117" 
+			add_country_modifier = {name = Koini_Greek2 duration = -1 }
+			remove_country_modifier = Koini_Greek1
+			remove_country_modifier = Koini_Greek3
+			set_country_flag = koini2
+			clr_country_flag  = koini1
+			clr_country_flag  = koini3
+		}
+	}
+
+	country_event = {
+		id = 2000000118
+		title = "EVTNAME2000000118" #Koini Weakening
+		desc = "EVTDESC2000000118" # Cool shit
+		picture = "church_slavonic"	
+		trigger = {
+		OR = {
+			has_country_flag = koini1
+			has_country_flag = koini2
+			}
+			exists  = BUL
+			exists  = ALB
+		}
+		mean_time_to_happen = {
+			days = 1
+		}
+		option = {
+			name = "EVTOPTA2000000118" 
+			add_country_modifier = {name = Koini_Greek3 duration = -1 }
+			remove_country_modifier =  Koini_Greek2
+			remove_country_modifier =  Koini_Greek1
+			set_country_flag = koini3
+			clr_country_flag  = koini1
+			clr_country_flag  = koini2
+		}
+	}
+
+	country_event = {
+		id = 2000000119
+		title = "EVTNAME2000000119" #Koini Stonk
+		desc = "EVTDESC2000000119" # Cool shit
+		picture = "koine_greek"	
+		trigger = {
+		OR = {
+			has_country_flag = koini3
+			has_country_flag = koini2
+		}
+		NOT = {exists = BUL}
+		NOT = {exists = ALB}
+		}
+		mean_time_to_happen = {
+			days = 1
+		}
+		option = {
+			name = "EVTOPTA2000000119" 
+			add_country_modifier = {name = Koini_Greek1 duration = -1 }
+			remove_country_modifier = Koini_Greek2
+			remove_country_modifier = Koini_Greek3
+			set_country_flag = koini1
+			clr_country_flag  = koini3
+			clr_country_flag  = koini2
+		}
+	}
+	country_event = {
+		id = 2000000120
+		title = "EVTNAME2000000120" #Tribe
+		desc = "EVTDESC2000000120" # Tribe Desc
+		picture = "Tribal_Village_Gre"	
+		trigger = {
+		OR = {
+			tag = GRE 
+			tag = KRE 
+			tag = BYZ
+		}
+		owns = 2015
+		year = 1910 
+		NOT = { has_country_flag = Greek_Tribe }
+		}
+		mean_time_to_happen = {
+			days = 1
+		}
+		option = {
+			name = "EVTOPTA2000000120"
+			2015 = {
+				add_province_modifier = {
+					name = small_immigration_boom_province
+					duration = 3650
+					}
+
+			}
+			2015 = {
+				add_province_modifier = {
+						name = core_integration 
+						duration = -1 
+					}
+			}
+			money = -10000
+			set_country_flag = Greek_Tribe
+		}
+			option = {
+			name = "EVTOPTB2000000120"
+			prestige = 10
+			set_country_flag = Greek_Tribe
+		}
+	}

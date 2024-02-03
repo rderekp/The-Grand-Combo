@@ -976,7 +976,13 @@ reclaim_the_empire = {
 					war_policy = jingoism
 				}
 			}
+		OR = {
+			AND = { THIS = { any_owned_province = { port = yes } } any_owned_province = { port = yes } }
+			neighbour = THIS
 			war_with = THIS
+			any_neighbor_country = { substate_of = THIS }
+			NOT = { is_our_vassal = THIS }
+			}
 		}
 		is_vassal = no
 		OR = {
@@ -988,6 +994,8 @@ reclaim_the_empire = {
 				is_core = SER
 				is_core = ALB
 				is_core = BOS
+				is_core = MON
+				is_core = DAL
 			}
 		}
 		}
@@ -1020,6 +1028,43 @@ reclaim_the_empire = {
 				is_core = ARM #Erivan
 				is_core = AZB
 				is_core = GEO
+			}
+		}
+		}
+		AND = {
+		has_global_flag = byzantine_italy_claimed
+		any_owned_province = {
+			OR = {
+				is_core = SIC 
+				is_core = MLT
+			}
+		}
+		}
+		AND = {
+		has_global_flag = byzantine_eastern_blacksea_claimed
+		any_owned_province = {
+			OR = {
+				region = RUS_964 
+				region = RUS_974
+				owns = SIC_753
+				owns = SIC_2567
+				owns = 3700
+				owns = 3701
+				owns = 3900
+				owns = 1047
+				owns = 979
+				owns = 976
+			}
+		}
+		}
+		AND = {
+		has_global_flag = byzantine_western_blacksea_claimed
+		any_owned_province = {
+			OR = {
+				region = TUR_674 
+				region = MOL_676
+				region = RUS_968
+				region = RUS_973
 			}
 		}
 		}
@@ -1042,6 +1087,9 @@ reclaim_the_empire = {
 				is_core = SER
 				is_core = ALB
 				is_core = BOS
+				is_core = MON
+				is_core = DAL
+				
 			}
 		}
 		}
@@ -1074,6 +1122,43 @@ reclaim_the_empire = {
 				is_core = ARM #Erivan
 				is_core = AZB
 				is_core = GEO
+			}
+		}
+		}
+		AND = {
+		has_global_flag = byzantine_italy_claimed
+		any_owned_province = {
+			OR = {
+				is_core = SIC 
+				is_core = MLT
+			}
+		}
+		}
+		AND = {
+		has_global_flag = byzantine_eastern_blacksea_claimed
+		any_owned_province = {
+			OR = {
+				region = RUS_964 
+				region = RUS_974
+				owns = SIC_753
+				owns = SIC_2567
+				owns = 3700
+				owns = 3701
+				owns = 3900
+				owns = 1047
+				owns = 979
+				owns = 976
+			}
+		}
+		}
+		AND = {
+		has_global_flag = byzantine_western_blacksea_claimed
+		any_owned_province = {
+			OR = {
+				region = TUR_674 
+				region = MOL_676
+				region = RUS_968
+				region = RUS_973
 			}
 		}
 		}
@@ -9603,6 +9688,9 @@ plague_cleanse = {
 		prestige_factor = -0.2
 	}
 }
+creating_greek_empire = {
+	sprite_index = 23
+
 
 # Acquire Core State
 conquest_of_the_wasteland = {
@@ -9613,6 +9701,546 @@ conquest_of_the_wasteland = {
 	construction_speed = 0.8
 
 	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = yes
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		THIS = {
+		is_greater_power = yes
+			tag = GRE
+			ai = no
+		}
+		OR = {
+			THIS = {
+				OR = {
+					war_policy = pro_military
+					war_policy = jingoism
+				}
+			}
+		OR = {
+			AND = { THIS = { any_owned_province = { port = yes } } any_owned_province = { port = yes } }
+			neighbour = THIS
+			war_with = THIS
+			any_neighbor_country = { substate_of = THIS }
+			NOT = { is_our_vassal = THIS }
+		}
+		}
+		is_vassal = no
+		OR = {
+		AND = {
+		has_global_flag = greek_balkan_claimed
+		any_owned_province = {
+			OR = {
+				region = TUR_2690 
+				region = TUR_809
+				region = TUR_853
+				region = TUR_3365
+				region = TUR_806
+				owns = 814
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_turkcol_claimed
+		any_owned_province = {
+			OR = {
+				region = TRI_1735
+				region = TRI_1731
+				region = TUN_1726
+				region = EGY_897
+				region = EGY_915
+				region = EGY_921
+			}
+		}
+		}
+		AND = { #This should be fine as player can't claim egypt before levant, so EGY cores on Levant don't matter
+		has_global_flag = greek_egycol_claimed
+		any_owned_province = {
+			OR = {
+				region = EGY_1745
+				region = EGY_1751
+				region = EGY_1755
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_magnagraecia_claimed
+		any_owned_province = {
+			OR = {
+				region = SIC_759 
+				region = SIC_754
+				region = SIC_753
+				region = SIC_2567
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_caucususgrecia_claimed
+		any_owned_province = {
+			OR = {
+				region = RUS_1092 
+				region = ABK_1095
+				region = RUS_1049
+				region = SIC_2567
+				owns = 3699
+				owns = 3912
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_eastern_blacksea_claimed
+		any_owned_province = {
+			OR = {
+				region = RUS_964 
+				region = RUS_974
+				owns = SIC_753
+				owns = SIC_2567
+				owns = 3700
+				owns = 3701
+				owns = 3900
+				owns = 1047
+				owns = 979
+				owns = 976
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_western_blacksea_claimed
+		any_owned_province = {
+			OR = {
+				region = TUR_674 
+				region = MOL_676
+				region = RUS_968
+				region = RUS_973
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_balkanports_claimed
+		any_owned_province = { 
+			OR = {
+				region = MON_3433 
+				region = AUS_780
+				region = AUS_770
+				region = AUS_774
+				region = AUS_736
+				owns = 3486
+				owns = 788
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_italports_claimed
+		any_owned_province = {
+			OR = {
+				owns = 742
+				owns = 743
+				owns = 752
+				owns = 731
+				owns = 729
+				owns = 733
+
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_northafrica_claimed
+		any_owned_province = {
+			OR = {
+				region = ALD_1708 
+				region = FRA_1700
+				region = ALD_1704
+				region = SPA_1689
+				region = MOR_1688
+				owns = 1694
+			}
+		}
+		}
+		AND = {
+		has_global_flag = english_colonies_claimed
+		any_owned_province = {
+			OR = {
+				region = ENG_2132
+				region = ENG_2125
+				region = ENG_1321
+				owns = 1908
+				owns = 1785
+				owns = 3465
+				owns = 3464
+				owns = 1412
+				owns = 1071
+				owns = 1496
+
+			}
+		}
+		}
+		AND = {
+		has_global_flag = french_colonies_claimed
+		any_owned_province = {
+			OR = {
+				region = ENG_2125 
+				owns = 1709
+				owns = 1701
+				owns = 1700
+				owns = 1704
+				owns = 1783
+				owns = 1312
+			}
+		}
+		}
+		AND = {
+		has_global_flag = iberian_colonies_claimed
+		any_owned_province = {
+			OR = {
+				region = SPA_1689
+				region = POR_2134
+				owns = 1954
+				owns = 1695
+				owns = 1303
+				owns = 1876
+				owns = 1498
+			}
+		}
+		}
+		AND = {
+		has_global_flag = arabian_ports_claimed
+		any_owned_province = {
+			OR = {
+				owns = 1177
+				owns = 1162
+				owns = 1875
+				owns = 932
+				owns = 1136
+				owns = 1168
+				owns = 1142
+				owns = 909
+				owns = 922
+				owns = 2664
+				owns = 1178
+			}
+		}
+		}
+				AND = {
+		has_global_flag = southasian_ports_claimed
+		any_owned_province = {
+			OR = {
+				owns = 1384
+				owns = 1402
+				owns = 1386
+				owns = 1388
+				owns = 1320
+				owns = 2576
+				owns = 1411
+				owns = 1404
+			}
+		}
+		}
+		AND = {
+		has_global_flag = eastasian_ports_claimed
+		any_owned_province = {
+			OR = {
+				region = JAP_1678
+				region = CHI_1485
+				owns = 2589
+				owns = 1637
+				owns = 3260
+				owns = 1499
+			}
+		}
+		}
+		AND = {
+		has_global_flag = mediterean_islands_claimed
+		any_owned_province = {
+			OR = {
+				region = SIC_763
+				region = ENG_854
+				region = ENG_517
+				region = SAR_765
+				region = FRA_473
+				owns = 2589
+			}
+		}
+		}
+		}
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = punitive_effects } }
+		}
+		NOT = { has_country_modifier = neutrality }
+		THIS = { NOT = { has_country_modifier = neutrality } }
+	}
+
+	allowed_states = {
+		OR = {
+		AND = {
+		has_global_flag = greek_balkan_claimed
+		any_owned_province = {
+			OR = {
+				region = TUR_2690 
+				region = TUR_809
+				region = TUR_853
+				region = TUR_3365
+				region = TUR_806
+				owns = 814
+				
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_turkcol_claimed
+		any_owned_province = {
+			OR = {
+				region = TRI_1735
+				region = TRI_1731
+				region = TUN_1726
+				region = EGY_897
+				region = EGY_915
+				region = EGY_921
+			}
+		}
+		}
+		AND = { #This should be fine as player can't claim egypt before levant, so EGY cores on Levant don't matter
+		has_global_flag = greek_egycol_claimed
+		any_owned_province = {
+			OR = {
+				region = EGY_1745
+				region = EGY_1751
+				region = EGY_1755
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_magnagraecia_claimed
+		any_owned_province = {
+			OR = {
+				region = SIC_759 
+				region = SIC_754
+				region = SIC_753
+				region = SIC_2567
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_caucususgrecia_claimed
+		any_owned_province = {
+			OR = {
+				region = RUS_1092 
+				region = ABK_1095
+				region = RUS_1049
+				region = SIC_2567
+				owns = 3699
+				owns = 3912
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_eastern_blacksea_claimed
+		any_owned_province = {
+			OR = {
+				region = RUS_964 
+				region = RUS_974
+				owns = SIC_753
+				owns = SIC_2567
+				owns = 3700
+				owns = 3701
+				owns = 3900
+				owns = 1047
+				owns = 979
+				owns = 976
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_western_blacksea_claimed
+		any_owned_province = {
+			OR = {
+				region = TUR_674 
+				region = MOL_676
+				region = RUS_968
+				region = RUS_973
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_balkanports_claimed
+		any_owned_province = {
+			OR = {
+				region = MON_3433 
+				region = AUS_780
+				region = AUS_770
+				region = AUS_774
+				region = AUS_736
+				owns = 3486
+				owns = 788
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_italports_claimed
+		any_owned_province = {
+			OR = {
+				owns = 742
+				owns = 743
+				owns = 752
+				owns = 731
+				owns = 729
+				owns = 733
+			}
+		}
+		}
+		AND = {
+		has_global_flag = greek_northafrica_claimed
+		any_owned_province = {
+			OR = {
+				region = ALD_1708 
+				region = FRA_1700
+				region = ALD_1704
+				region = SPA_1689
+				region = MOR_1688
+				owns = 1694
+			}
+		}
+		}
+		AND = {
+		has_global_flag = english_colonies_claimed
+		any_owned_province = {
+			OR = {
+				region = ENG_2132
+				region = ENG_2125
+				region = ENG_1321
+				owns = 1908
+				owns = 1785
+				owns = 3465
+				owns = 3464
+				owns = 1412
+				owns = 1071
+				owns = 1496
+
+			}
+		}
+		}
+		AND = {
+		has_global_flag = french_colonies_claimed
+		any_owned_province = {
+			OR = {
+				region = ENG_2125 
+				owns = 1709
+				owns = 1701
+				owns = 1700
+				owns = 1704
+				owns = 1783
+				owns = 1312
+			}
+		}
+		}
+		AND = {
+		has_global_flag = iberian_colonies_claimed
+		any_owned_province = {
+			OR = {
+				region = SPA_1689
+				region = POR_2134
+				owns = 1954
+				owns = 1695
+				owns = 1303
+				owns = 1876
+				owns = 1498
+			}
+		}
+		}
+		AND = {
+		has_global_flag = arabian_ports_claimed
+		any_owned_province = {
+			OR = {
+				owns = 1177
+				owns = 1162
+				owns = 1875
+				owns = 932
+				owns = 1136
+				owns = 1168
+				owns = 1142
+				owns = 909
+				owns = 922
+				owns = 2664
+				owns = 1178
+			}
+		}
+		}
+		AND = {
+		has_global_flag = southasian_ports_claimed
+		any_owned_province = {
+			OR = {
+				owns = 1384
+				owns = 1402
+				owns = 1386
+				owns = 1388
+				owns = 1320
+				owns = 2576
+				owns = 1411
+				owns = 1404
+			}
+		}
+		}
+		AND = {
+		has_global_flag = eastasian_ports_claimed
+		any_owned_province = {
+			OR = {
+				region = JAP_1678
+				region = CHI_1485
+				owns = 2589
+				owns = 1637
+				owns = 3260
+				owns = 1499
+			}
+		}
+		}
+		AND = {
+		has_global_flag = mediterean_islands_claimed
+		any_owned_province = {
+			OR = {
+				region = SIC_763
+				region = ENG_854
+				region = ENG_517
+				region = SAR_765
+				region = FRA_473
+				owns = 2589
+			}
+		}
+		}
+		}
+		OR = {
+			THIS = { ai = no }
+			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+			any_owned_province = { port = yes }
+			AND = {
+				any_owned_province = { port = yes }
+				THIS = {
+					rank = 16
+					any_owned_province = { port = yes }
+				}
+			}
+		}
+	}
+	po_demand_state = yes
+
+	war_name = WAR_RECLAIM_THE_EMPIRE_NAME
+
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism
+			to = pro_military
+			value = 0.05
+		}
 	prestige_factor = 0
 	peace_cost_factor = 33
 	penalty_factor = 0

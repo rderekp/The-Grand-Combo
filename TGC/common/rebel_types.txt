@@ -4377,6 +4377,7 @@ unciv_reactionary_rebels = {
 		remove_random_economic_reforms = 1
 		remove_random_military_reforms = 1
 		country_event = 800149
+		set_country_flag = checker_to_remove_writing
 	}
 }
 

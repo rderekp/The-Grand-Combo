@@ -505,6 +505,11 @@
 		religion = animist
 		size = 20025
 	}
+	tribals= {
+		culture = greek
+		religion = orthodox
+		size = 8
+	}
 	aristocrats = {
 		culture = south_forest_bantu
 		religion = animist

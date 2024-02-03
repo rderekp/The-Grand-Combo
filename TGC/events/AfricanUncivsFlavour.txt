@@ -415,9 +415,250 @@ country_event = {
 				# ideology = reactionary
 				# factor = 5
 			# }
-		# }
-		# ai_chance = {
-			# factor = 0
-		# }
-	# }
+		# 
+		#ai_chance = {
+			#factor = 0
+		#}
+	#}
 # }
+
+country_event = {
+		id = 2000000104
+		title = "EVTNAME2000000104" #Choose a Writing System
+		desc = "EVTDESC2000000104" # Cool shit
+		picture = "become_hausaland"
+		
+		trigger = {
+			AND = {
+			has_country_flag = choose_writing_system
+			has_country_flag = first_writing_group
+				OR = {
+				GRE = {is_secondary_power = no}
+				BYZ = {is_secondary_power = no}
+				GRE = {is_greater_power = no}
+				BYZ = {is_greater_power = no}
+				}
+			}
+		}
+
+		mean_time_to_happen = {
+			months = 1
+		}
+		
+		option = {
+			name = "EVTOPTA2000000104" #Choose a Writing System Latin Alphabet
+			prestige = 5
+			clr_country_flag = choose_writing_system
+			add_country_modifier = {
+			name = Adopted_latin
+			duration = -1 }
+			
+			}
+			
+		option = {
+			name = "EVTOPTB2000000104" #Choose a Writing System Cyrilic Alphabet
+			prestige = 5
+			clr_country_flag = choose_writing_system
+			add_country_modifier = {
+			name = Adopted_Cyrilic
+			duration = -1 }
+
+			}
+			
+		option = {
+			name = "EVTOPTD2000000104" #Choose a Writing System an Arabic Abjad
+			prestige = 5
+			clr_country_flag = choose_writing_system
+			add_country_modifier = {
+			name = Adopted_Arabic
+			duration = -1 }
+
+			}
+		option = {
+			name = "EVTOPTL2000000104" #More Options
+			set_country_flag = second_writing_group
+			clr_country_flag = first_writing_group
+			}
+		}
+
+country_event = {
+		id = 2000000105
+		title = "EVTNAME2000000105" #Choose a Writing System
+		desc = "EVTDESC2000000105" # Cool shit
+		picture = "become_hausaland"
+		
+		trigger = {
+			AND = {
+			has_country_flag = choose_writing_system
+			has_country_flag = second_writing_group
+			}
+		}
+
+		mean_time_to_happen = {
+			months = 1
+		}
+		
+		option = {
+			name = "EVTOPTE2000000104" #Choose a Writing System Ethiopic Abugida	
+			prestige = 10
+			clr_country_flag = choose_writing_system
+			add_country_modifier = {
+			name = Adopted_Ethiopic
+			duration = -1 }
+			}
+		
+		option = {
+			name = "EVTOPTF2000000104" #Choose a Writing System Chinese Logographic
+			prestige = 10
+			clr_country_flag = choose_writing_system
+			add_country_modifier = {
+			name = Adopted_Chinese
+			duration = -1 }
+			}
+		
+		option = {
+			name = "EVTOPTG2000000104" #Choose a Writing System Original Alphabet
+			prestige = 20
+			clr_country_flag = choose_writing_system
+			add_country_modifier = {
+			name = Adopted_Original
+			duration = -1 }
+			}
+		
+		option = {
+			name = "EVTOPTG2000000105" #Starting Options
+			set_country_flag = first_writing_group
+			clr_country_flag = second_writing_group
+			}
+		}
+		
+country_event = {
+		id = 2000000106
+		title = "EVTNAME2000000106" #Peeps Angry because of Writing
+		desc = "EVTDESC2000000106" # Cool shit
+		picture = "rebellion"
+		
+		trigger = {
+			has_country_flag = writing_angery_starter
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+		}
+		
+		option = {
+			name = "EVTOPTA2000000106" #Anti Literacy Movement	
+			add_country_modifier = {
+			name = Anti_Literacy_Movement
+			duration = 1200 }
+			clr_country_flag = writing_angery_starter
+			}	
+		}
+	
+country_event = { #simple way to allow hellenic alphabet
+		id = 2000000107
+		title = "EVTNAME2000000107" #Choose a Writing System
+		desc = "EVTDESC2000000107" # Cool shit
+		picture = "become_hausaland"
+		
+		trigger = {
+			AND = {
+			has_country_flag = choose_writing_system
+			has_country_flag = first_writing_group
+				OR = {
+				GRE = {is_secondary_power = yes}
+				BYZ = {is_secondary_power = yes}
+				GRE = {is_greater_power = yes}
+				BYZ = {is_greater_power = yes}
+				     }
+				}
+			   }
+			   
+		mean_time_to_happen = {
+		months = 1
+		}
+		
+		option = {
+			name = "EVTOPTA2000000107" #Choose a Writing System Latin Alphabet
+			prestige = 5
+			clr_country_flag = choose_writing_system
+			add_country_modifier = {
+			name = Adopted_latin
+			duration = -1
+			}
+		}
+		
+		option = {
+			name = "EVTOPTB2000000107" #Choose a Writing System Cyrilic Alphabet
+			prestige = 5
+			clr_country_flag = choose_writing_system
+			add_country_modifier = {
+			name = Adopted_Cyrilic
+			duration = -1
+			}
+		}
+		
+		option = {
+			name = "EVTOPTC2000000107" #Choose a Writing System Hellenic Alphabet
+			prestige = 5
+			clr_country_flag = choose_writing_system
+			add_country_modifier = {
+			name = Adopted_Hellenic
+			duration = -1
+			}
+
+		}
+		option = {
+			name = "EVTOPTD2000000107" #Choose a Writing System an Arabic Abjad
+			prestige = 5
+			clr_country_flag = choose_writing_system
+			add_country_modifier = {
+			name = Adopted_Arabic
+			duration = -1
+			}
+
+		}
+		option = {
+			name = "EVTOPTL2000000107" #More Options
+			set_country_flag = second_writing_group
+			clr_country_flag = first_writing_group
+			}
+
+		}
+		
+country_event = {
+		id = 2000000108
+		title = "EVTNAME2000000108" #Lose writing very cool
+		desc = "EVTDESC2000000108" #Cool shit
+		picture = "rebellion"
+		
+		trigger = {
+			has_country_flag = writing_unciv
+			has_country_flag = checker_to_remove_writing
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+		}
+		option = {
+			name = "EVTOPTA2000000108" #Rebels Ban Writing
+			remove_country_modifier = Adopted_Ethiopic
+			remove_country_modifier = Adopted_Original
+			remove_country_modifier = Adopted_latin
+			remove_country_modifier = Adopted_Cyrilic
+			remove_country_modifier = Adopted_Hellenic
+			remove_country_modifier = Adopted_Arabic
+			remove_country_modifier = Adopted_Chinese
+			add_country_modifier = {
+			name = lacks_writing_system
+			duration = -1 }
+			clr_country_flag = writing_unciv
+			clr_country_flag = checker_to_remove_writing
+			set_country_flag = lacking_writing_system
+		}	
+
+	}
+		
+		
+		
+		

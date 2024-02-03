@@ -3137,7 +3137,7 @@ western_military_mission = {
 	icon = 7
 }
 
-##### Byzantines #####
+##### Byzantines/Greek #####
 religious_resurgence = {
 	prestige = 0.5
 	global_assimilation_rate = 0.10
@@ -3173,6 +3173,14 @@ renovated_constantinople = {
 	local_factory_output = 0.1
 	assimilation_rate = 0.75
 	icon = 15
+}
+
+	Colonial_Destiny = {
+	prestige = 0.5
+	global_assimilation_rate = 0.05
+	global_pop_militancy_modifier = -0.01
+	non_accepted_pop_militancy_modifier = 0.01
+	icon = 29
 }
 
 
@@ -5905,6 +5913,83 @@ bad_immigration_policy = {
 	icon = 32
 }
 
+# Africa-EEE
+Adopted_latin = {
+	global_pop_militancy_modifier = 0.02
+	global_pop_consciousness_modifier = 0.02
+	global_assimilation_rate = 0.025
+	global_immigrant_attract = 0.02
+	research_points_modifier = 0.06
+	education_efficiency_modifier = 0.1
+	icon = 9
+}
+
+Adopted_Cyrilic = {
+	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.01
+	global_assimilation_rate = 0.025
+	global_immigrant_attract = 0.01
+	research_points_modifier = 0.04
+	war_exhaustion = -0.01
+	education_efficiency_modifier = 0.1
+	icon = 9
+}
+
+Adopted_Hellenic = {
+	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.01
+	global_assimilation_rate = 0.025
+	research_points_modifier = 0.04
+	prestige = 0.01
+	education_efficiency_modifier = 0.1
+	icon = 9
+}
+
+Adopted_Arabic = {
+	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.01
+	global_assimilation_rate = 0.025
+	research_points_modifier = 0.03
+	global_pop_growth = 0.001
+	education_efficiency_modifier = 0.1
+	icon = 9
+}
+
+Adopted_Ethiopic = {
+	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.01
+	global_assimilation_rate = 0.025
+	research_points_modifier = 0.02
+	education_efficiency_modifier = 0.1
+	prestige = 0.02
+	icon = 9
+}
+
+Adopted_Chinese = {
+	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.01
+	global_assimilation_rate = 0.05
+	research_points_modifier = 0.03
+	education_efficiency_modifier = 0.1
+	icon = 9
+}
+
+Adopted_Original = {
+	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.01
+	core_pop_militancy_modifier = -0.02
+	global_assimilation_rate = 0.025
+	research_points_modifier = 0.01
+	education_efficiency_modifier = 0.2
+	prestige = 0.04
+	icon = 9
+}
+
+Anti_Literacy_Movement = {
+global_pop_militancy_modifier = 0.02
+education_efficiency_modifier = -0.2
+}
+
 arch_museum = {
 	prestige = 0.01
 	education_efficiency_modifier = 0.1
@@ -6096,6 +6181,74 @@ sacrifice_cd = {
 	icon = 21
 }
 
+craftsmen_fix_cooldown = {
+    	icon = 12
+}
 
+Dimotiki = {
+	core_pop_militancy_modifier = -0.02
+	global_pop_militancy_modifier = 0.02
+	global_assimilation_rate = 0.1
+	research_points_modifier = 0.025
+	education_efficiency_modifier = 0.1
+	icon = 9
+}
 
+Katharevousa = {
+	core_pop_militancy_modifier = 0.01
+	global_pop_militancy_modifier = -0.01
+	research_points_modifier = -0.025
+	education_efficiency_modifier = -0.05
+	prestige = 0.01
+	icon = 9
+}
+
+Koini_Greek1 = {
+	core_pop_militancy_modifier = 0.02
+	global_pop_militancy_modifier = -0.02
+	global_assimilation_rate = 0.3
+	research_points_modifier = -0.05
+	prestige = 0.02
+	education_efficiency_modifier = -0.1
+	icon = 9
+}
+
+Koini_Greek2 = {
+	core_pop_militancy_modifier = 0.02
+	global_pop_militancy_modifier = -0.02
+	global_pop_consciousness_modifier = 0.01
+	global_assimilation_rate = 0.02
+	research_points_modifier = -0.05
+	prestige = 0.02
+	education_efficiency_modifier = -0.1
+	icon = 9
+}
+
+Koini_Greek3 = {
+	core_pop_militancy_modifier = 0.02
+	global_pop_militancy_modifier = -0.02
+	global_pop_consciousness_modifier = 0.01
+	global_assimilation_rate = 0.01
+	research_points_modifier = -0.05
+	prestige = 0.02
+	education_efficiency_modifier = -0.1
+	icon = 9
+}
+
+Language_Debate = {
+	core_pop_militancy_modifier = 0.01
+	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.01
+	research_points_modifier = -0.025
+	education_efficiency_modifier = -0.1
+	icon = 9
+
+}
+Disglosia = {
+	core_pop_militancy_modifier = 0.01
+	global_assimilation_rate = -0.01
+	research_points_modifier = -0.025
+	education_efficiency_modifier = -0.1
+	icon = 9
+}
 

@@ -1110,34 +1110,35 @@ political_decisions = {
 	#  }
 	
 	# #Description: Byzantine ambitions towards Italy before Landing.
-	# 	reclaim_southern_italy = {
-	# 	potential = {
-	# 		  has_country_flag = no_turks_in_anatolia
-	# 		  NOT = { has_country_flag = byzantine_italy }
-	# 	  }
-	# 	  allow = {
-	# 		  all_core = { owned_by = THIS }
-	# 		  is_disarmed = no
-	# 		  NOT = { has_country_modifier = no_more_war }			  
-	# 	  }
-	# 	  effect = {
-	# 		  prestige = 10.5
-	# 		  badboy = 20
-	# 		  set_country_flag = byzantine_italy			 
+	 	reclaim_southern_italy = {
+	 	potential = {
+	 		  has_country_flag = no_turks_in_anatolia
+	 		  NOT = { has_country_flag = byzantine_italy }
+	 	  }
+	 	  allow = {
+	 		  all_core = { owned_by = THIS }
+	 		  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+	 	  }
+		  effect = {
+			  prestige = 10.5
+				badboy = 20
+	 		  set_country_flag = byzantine_italy
+			  set_global_flag = byzantine_italy_claimed
 	# 		  SIC_763 = { add_core = BYZ }
 	# 		  SIC_759 = { add_core = BYZ }
 	# 		  SIC_754 = { add_core = BYZ }
 	# 		  SIC_753 = { add_core = BYZ }
-	# 		  }
+	 		  }
 			  
-	# 	 ai_will_do = {
-	# 		 factor = 1
-	# 		 modifier = {
-	# 			 factor = 0
-	# 			 badboy = 10
-	# 		 }
-	# 	 }
-	# }
+	 	 ai_will_do = {
+	 		 factor = 1
+	 		 modifier = {
+	 			 factor = 0
+	 			 badboy = 10
+	 		 }
+	 	 }
+	 }
 	# 	#Description: Accept Southern Italian culture if you own Southern Italy.
 	#  accept_south_italians = {
 	# 	 potential = {
@@ -2707,21 +2708,22 @@ political_decisions = {
 # 	}
 	
 # 		#Description: Take Control of the Eastern Black Sea.
-# 		reclaim_eastern_blacksea = {
-# 		potential = {
-# 			  has_country_flag = byzantine_eastern_frontiers 
-# 			  NOT = { has_country_flag = byzantine_eastern_blacksea }
+ 		reclaim_eastern_blacksea = {
+		potential = {
+ 			  has_country_flag = byzantine_eastern_frontiers 
+			  NOT = { has_country_flag = byzantine_eastern_blacksea }
 
-# 		  }
-# 		  allow = {
-# 			  all_core = { owned_by = THIS }	
-# 			  is_disarmed = no
-# 			  NOT = { has_country_modifier = no_more_war }			  
-# 		  }
-# 		  effect = {
-# 			  prestige = 10.5
-# 			  badboy = 15
-# 			  set_country_flag = byzantine_eastern_blacksea			 
+ 		  }
+ 		  allow = {
+ 			  all_core = { owned_by = THIS }	
+ 			  is_disarmed = no
+ 			  NOT = { has_country_modifier = no_more_war }			  
+ 		  }
+		  effect = {
+ 			  prestige = 10.5
+ 			  badboy = 15
+ 			  set_country_flag = byzantine_eastern_blacksea
+			  set_global_flag = byzantine_eastern_blacksea_claimed
 # 			  RUS_1052 = { add_core = BYZ }
 # 			  RUS_1048 = { add_core = BYZ }
 # 			  RUS_979 = { add_core = BYZ }
@@ -2735,31 +2737,32 @@ political_decisions = {
 # 			  HDJ_1151 = { remove_core = BYZ}
 # 			  }
 			  
-# 		 ai_will_do = {
-# 			 factor = 1
-# 			 modifier = {
-# 				 factor = 0
-# 				 badboy = 10
-# 			 }
-# 		 }
-# 	}
+		 ai_will_do = {
+ 			 factor = 1
+ 			 modifier = {
+ 				 factor = 0
+ 				 badboy = 10
+			 }
+ 		 }
+ 	}
 	
-# 		#Description: Take Control of the Western Black Sea .
-# 		reclaim_western_blacksea = {
-# 		potential = {
-# 			  has_country_flag = byzantine_eastern_blacksea 
-# 			  NOT = { has_country_flag = byzantine_western_blacksea }
+		#Description: Take Control of the Western Black Sea .
+		reclaim_western_blacksea = {
+ 		potential = {
+ 			  has_country_flag = byzantine_eastern_blacksea 
+ 			  NOT = { has_country_flag = byzantine_western_blacksea }
 
-# 		  }
-# 		  allow = {
-# 			  all_core = { owned_by = THIS }	
-# 			  is_disarmed = no
-# 			  NOT = { has_country_modifier = no_more_war }		  
-# 		  }
-# 		  effect = {
-# 			  prestige = 10.5
-# 			  badboy = 10
-# 			  set_country_flag = byzantine_western_blacksea			 
+ 		  }
+ 		  allow = {
+ 			  all_core = { owned_by = THIS }	
+ 			  is_disarmed = no
+ 			  NOT = { has_country_modifier = no_more_war }		  
+ 		  }
+ 		  effect = {
+ 			  prestige = 10.5
+ 			  badboy = 10
+ 			  set_country_flag = byzantine_western_blacksea
+			  set_global_flag = byzantine_western_blacksea_claimed
 # 			  RUS_974 = { add_core = BYZ }
 # 			  RUS_973 = { add_core = BYZ }
 # 			  RUS_968 = { add_core = BYZ }	
@@ -2772,16 +2775,16 @@ political_decisions = {
 # 			  1047 = { add_core = BYZ }	
 # 			  976 = { add_core = BYZ }	
 			  
-# 			  }
+ 			  }
 			  
-# 		 ai_will_do = {
-# 			 factor = 1
-# 			 modifier = {
-# 				 factor = 0
-# 				 badboy = 10
-# 			 }
-# 		 }
-# 	}
+ 		 ai_will_do = {
+ 			 factor = 1
+ 			 modifier = {
+ 				 factor = 0
+ 				 badboy = 10
+ 			 }
+ 		 }
+ 	}
 # 	the_roman_empire_fully_restored = {
 # 		potential = {
 # 			has_country_flag = byzantine_western_blacksea
@@ -3682,4 +3685,700 @@ political_decisions = {
 
 	# 	ai_will_do = { factor = 1 }
 	# }
+	#Description:Greek language question
+	Greek_language_question  = {
+		picture = Greek_language_question
+		 potential = {
+			  romanticism = 1  
+			  literacy  = 0.1
+		 	 }
+		  allow = {
+			NOT = {has_country_flag = greek_language_debate}
+			 }
+		 effect = {
+			country_event = 2000000115
+			set_country_flag = greek_language_debate
+		   	 }  
+		 ai_will_do = { factor = 1 }
+	 }
+
+#Description: If you manage to fully realize the Megali idea, you can instead focus in Creating a Colonial Empire.
+	greek_colonial_aspirations = {
+		picture = dreams_of_empire
+		potential = {
+			NOT = { exists = BYZ }
+			has_country_flag = megali_idea_claimed
+			NOT = { has_country_flag = greek_colonialsm_stage1 }
+		}
+		allow = {
+			is_greater_power = yes
+			has_unclaimed_cores = no
+			NOT = { has_country_flag = greek_colonialsm_stage1 }
+		}
+		effect = {
+			prestige = 20 #Generic Prestige Reward
+			badboy = -5 #Generic Infamy Reward
+			add_country_modifier = { name = global_baby_boom_small duration = 1800 } #Generic Population Reward
+			set_country_flag = greek_colonialsm_stage1
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+    #Description: No Coast For You 
+	push_the_turks_inland = {
+		picture = map_anatolia
+		potential = {
+			NOT = { has_country_flag = retreated_from_anatolia }
+			has_country_flag = greek_colonialsm_stage1
+			NOT = { has_country_flag = no_turks_in_coast }
+		}
+
+		allow = {
+			all_core = { owned_by = THIS }
+			war_policy = jingoism
+			is_greater_power = yes
+			is_disarmed = no
+			NOT = { has_country_modifier = no_more_war }
+		}
+
+		effect = {
+			prestige = 60
+			badboy = 5
+			TUR_1096 = { add_core = GRE }
+			TUR_894 = { add_core = GRE }
+			set_country_flag = no_turks_in_coast
+			any_country = {
+					limit = {
+						is_greater_power = no
+						capital_scope = {
+							continent = europe
+						}
+						NOT = {
+							tag = TUR
+							neighbour = THIS
+						}
+					}
+					relation = { who = THIS value = -50 }
+				}
+				any_country = {
+					limit = {
+						is_greater_power = yes
+						capital_scope = {
+							continent = europe
+						}
+						NOT = {
+							tag = TUR
+							neighbour = THIS
+						}
+					}
+					relation = { who = THIS value = -100 }
+				}
+				any_country = {
+					limit = {
+						exists = yes
+						neighbour = THIS
+						NOT = {
+							tag = TUR
+						}
+					}
+					relation = { who = THIS value = -100 }
+				}
+				TUR = {
+					relation = { who = THIS value = -200 }
+				}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 1 #this was 5, five would mean 5xlimit so = 125
+			}
+		}
+	}
+	
+		#Description: Take Their Colonies. Only Costal Regions
+		greece_take_turkcol = {
+		picture = mediterranean
+		potential = {
+			has_country_flag = no_turks_in_coast
+			  NOT = { has_country_flag = greek_turkcol }
+		  }
+		  allow = {
+			has_country_flag = no_turks_in_coast
+			  all_core = { owned_by = THIS }		
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }	
+		  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 15
+			  set_country_flag = greek_turkcol
+			  set_global_flag = greek_turkcol_claimed  #This enables the CB that player can then freely use to reclaim colonies region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+	#Description: Greek ambitions towards Costal Egypt
+		grecol_egypt = {
+		picture = map_egypt
+		potential = {
+			has_country_flag = greek_turkcol
+			  NOT = { has_country_flag = greek_egycol }
+		  }
+		  allow = {
+			has_country_flag = greek_turkcol
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 10
+			  set_country_flag = greek_egycol
+			  set_global_flag = greek_egycol_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+		#Description: More Hellenaboo than Romanboo 
+		greek_mediterenean_colonialism = {
+		picture = mediterranean
+		potential = {
+			has_country_flag = greek_egycol
+			has_country_flag = greek_turkcol
+		NOT = { has_country_flag = greek_colonialsm_stage21 }
+		NOT = { has_country_flag = greek_colonialsm_stage22 }
+		}
+		allow = {
+			is_greater_power = yes
+			has_unclaimed_cores = no
+		}
+		effect = {
+			prestige = 20 #Generic Prestige Reward
+			badboy = -5 #Generic Infamy Reward
+			add_country_modifier = { name = Colonial_Destiny }
+			set_country_flag = greek_colonialsm_stage21
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+		#Description: Greek ambitions towards Global Colonies Traditional European Colonization 
+		greek_global_colonialism = {
+		picture = greek_med
+		potential = {
+			has_country_flag = greek_egycol
+			has_country_flag = greek_turkcol
+			NOT = { has_country_flag = greek_colonialsm_stage22 }
+			NOT = { has_country_flag = greek_colonialsm_stage21 }
+		}
+
+		allow = {
+			is_greater_power = yes
+			has_unclaimed_cores = no
+		}
+		effect = {
+			prestige = 25 #Generic Prestige Reward
+			badboy = 5 #In this case it threatens the intrests of the Great Powers
+			add_country_modifier = { name = global_baby_boom_small duration = 1800 } #Generic Population Reward
+			set_country_flag = greek_colonialsm_stage22
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+		#Description: The Balkan Buffer 
+		balkan_buffer = {
+		picture = map_balkans
+		potential = {
+			has_country_flag = greek_colonialsm_stage21
+			  NOT = { has_country_flag = greek_balkan }
+		  }
+		  allow = {
+			has_country_flag = greek_colonialsm_stage21
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 20
+			  set_country_flag = greek_balkan
+			  set_global_flag = greek_balkan_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: Greek Magna Graecia 
+		magna_grecia = {
+		picture = map_southitaly
+		potential = {
+			has_country_flag = greek_colonialsm_stage21
+			  NOT = { has_country_flag = greek_magna }
+		  }
+		  allow = {
+			has_country_flag = greek_colonialsm_stage21
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 20
+			  set_country_flag = greek_magna
+			  set_global_flag = greek_magnagraecia_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: Focus on The Black Sea
+		greek_blacksea_colonialism = {
+		picture = mediterranean
+		potential = {
+			has_country_flag = greek_magna
+			has_country_flag = greek_balkan
+		NOT = { has_country_flag = greek_colonialsm_stage211 }	
+		}
+		allow = {
+			is_greater_power = yes
+			has_unclaimed_cores = no
+		}
+		effect = {
+			prestige = 20 #Generic Prestige Reward
+			badboy = -5 #Generic Infamy Reward
+			add_country_modifier = { name = Colonial_Destiny }
+			set_country_flag = greek_colonialsm_stage211
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+		#Description: Focus on Fully controling the Western Med
+		greek_full_east_med = {
+		picture = mediterranean
+		potential = {
+			has_country_flag = greek_magna
+			has_country_flag = greek_balkan
+		NOT = { has_country_flag = greek_colonialsm_stage212 }	
+		}
+		allow = {
+			is_greater_power = yes
+			has_unclaimed_cores = no
+		}
+		effect = {
+			prestige = 20 #Generic Prestige Reward
+			badboy = -5 #Generic Infamy Reward
+			add_country_modifier = { name = Colonial_Destiny }
+			set_country_flag = greek_colonialsm_stage212
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+		#Description: The Caucusus
+		caucusus_grecia = {
+		picture = map_caucasus
+		potential = {
+			has_country_flag = greek_colonialsm_stage212
+			  NOT = { has_country_flag = greek_caucusus_grecia }
+		  }
+		  allow = {
+			has_country_flag = greek_colonialsm_stage212
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 15
+			  set_country_flag = greek_caucusus_grecia
+			  set_global_flag = greek_caucususgrecia_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: The Eastern Black Sea
+		eastern_blacksea_grecia = {
+		picture = eastern_blacksea
+		potential = {
+			has_country_flag = greek_caucusus_grecia
+			  NOT = { has_country_flag = greek_eastern_blacksea }
+		  }
+		  allow = {
+			has_country_flag = greek_caucusus_grecia
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 15
+			  set_country_flag = greek_eastern_blacksea
+			  set_global_flag = greek_eastern_blacksea_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+
+		#Description: The Western Black Sea
+		western_blacksea_grecia = {
+		picture = a_black_sea_fleet
+		potential = {
+			has_country_flag = greek_caucusus_grecia
+			  NOT = { has_country_flag = greek_western_blacksea }
+		  }
+		  allow = {
+			has_country_flag = greek_caucusus_grecia
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 20
+			  set_country_flag = greek_western_blacksea
+			  set_global_flag = greek_western_blacksea_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+	#Description: Balkan Ports
+		balkanport_grecia = {
+		picture = Balkan_Ports
+		potential = {
+			has_country_flag = greek_colonialsm_stage212
+			  NOT = { has_country_flag = greek_balkanports_grecia }
+		  }
+		  allow = {
+			has_country_flag = greek_colonialsm_stage212
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 15
+			  set_country_flag = greek_balkanports_grecia
+			  set_global_flag = greek_balkanports_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: The Six Italian Cities
+		sixitaliancities_grecia = {
+		picture = greek_ports_italy
+		potential = {
+			has_country_flag = greek_balkanports_grecia
+			  NOT = { has_country_flag = greek_italports_grecia }
+		  }
+		  allow = {
+			has_country_flag = greek_balkanports_grecia
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 10
+			  set_country_flag = greek_italports_grecia
+			  set_global_flag = greek_italports_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: North Africa
+		western_greek_northafrica = {
+		picture = northafrica_map
+		potential = {
+			has_country_flag = greek_italports_grecia
+			  NOT = { has_country_flag = greek_northafrica_grecia }
+		  }
+		  allow = {
+			has_country_flag = greek_italports_grecia
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 10
+			  set_country_flag = greek_northafrica_grecia
+			  set_global_flag = greek_northafrica_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: Conflict over colonies with the English
+		english_enmity = {
+		picture = Fleet_Battle
+		potential = {
+			has_country_flag = greek_colonialsm_stage22
+			  NOT = { has_country_flag = anglo_greek_conflict }
+		  }
+		  allow = {
+			has_country_flag = greek_colonialsm_stage22
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 20
+			  set_country_flag = anglo_greek_conflict
+			  set_global_flag = english_colonies_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: Conflict over colonies with the French
+		french_enmity = {
+		picture = Fleet_Battle
+		potential = {
+			has_country_flag = greek_colonialsm_stage22
+			  NOT = { has_country_flag = franko_greek_conflict }
+		  }
+		  allow = {
+			has_country_flag = greek_colonialsm_stage22
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 20
+			  set_country_flag = franko_greek_conflict
+			  set_global_flag = french_colonies_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+		
+		#Description: Conflict over colonies with the Iberians
+		spanish_enmity = {
+		picture = Fleet_Battle
+		potential = {
+			has_country_flag = greek_colonialsm_stage22
+			  NOT = { has_country_flag = ibero_greek_conflict }
+		  }
+		  allow = {
+			has_country_flag = greek_colonialsm_stage22
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 20
+			  set_country_flag = ibero_greek_conflict
+			  set_global_flag = iberian_colonies_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: Arabian Colonies
+		scouping_arabia = {
+		picture = map_arabia
+		potential = {
+			has_country_flag = anglo_greek_conflict
+			has_country_flag = franko_greek_conflict
+			has_country_flag = ibero_greek_conflict
+			  NOT = { has_country_flag = scouping_arabian_ports }
+		  }
+		  allow = {
+				has_country_flag = anglo_greek_conflict
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 20
+			  set_country_flag = scouping_arabian_ports
+			  set_global_flag =	arabian_ports_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: South Asian Colonies
+		scouping_southasia = {
+		picture = map_southasia
+		potential = {
+			has_country_flag = scouping_arabian_ports
+			  NOT = { has_country_flag = scouping_southasian_ports }
+		  }
+		  allow = {
+				has_country_flag = scouping_arabian_ports
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 20
+			  set_country_flag = scouping_southasian_ports
+			  set_global_flag =	southasian_ports_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: East Asian Colonies
+		scouping_eastasia = {
+		picture = map_eastasia
+		potential = {
+				has_country_flag = scouping_southasian_ports
+			  NOT = { has_country_flag = scouping_eastasian_ports }
+		  }
+		  allow = {
+				has_country_flag = scouping_southasian_ports
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 20
+			  set_country_flag = scouping_eastasian_ports
+			  set_global_flag =	eastasian_ports_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
+	
+		#Description: Taking the Meditereanean Islands
+		greek_mediterean_islands = {
+		picture = italian_islands
+		potential = {
+		OR{
+				has_country_flag = scouping_eastasian_ports
+				has_country_flag = greek_western_blacksea
+				has_country_flag = greek_northafrica_grecia
+		}
+			  NOT = { has_country_flag = hellenic_mediterean_islands }
+		  }
+		  allow = {
+			  all_core = { owned_by = THIS }	
+			  is_disarmed = no
+			  NOT = { has_country_modifier = no_more_war }			  
+		  }
+		  effect = {
+			  prestige = 30
+			  badboy = 20
+			  set_country_flag = hellenic_mediterean_islands
+			  set_global_flag =	mediterean_islands_claimed #This enables the CB that player can then freely use to reclaim the region
+			  }
+			  
+		 ai_will_do = {
+			 factor = 1
+			 modifier = {
+				 factor = 0
+				 badboy = 1
+			 }
+		 }
+	}
 }

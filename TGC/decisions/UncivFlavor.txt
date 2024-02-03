@@ -482,47 +482,47 @@ political_decisions = {
 	}
 #from UncivFlavor.txt
 
-	establish_writing_system = {
-		picture = become_hausaland
-		potential = {
-			has_country_flag = lacking_writing_system
-		}
+	#establish_writing_system = {
+		#picture = become_hausaland
+		#potential = {
+			#has_country_flag = lacking_writing_system
+		#}
 
-		allow = {
-			war = no
-			OR = {
-				has_country_modifier = western_influences
-				has_country_modifier = western_presence
-				civilized = yes
-			}
-			NOT = { has_country_modifier = uncivilized_isolationism }
-			OR = {
-				literacy = 0.04
-				civilization_progress = 0.4
-				has_country_modifier = educational_reform
-				civilized = yes
-				AND = {
-					literacy = 0.03
-					has_country_modifier = military_reform
-				}
-			}
-		}
+		#allow = {
+			#war = no
+			#OR = {
+				#has_country_modifier = western_influences
+				#has_country_modifier = western_presence
+				#civilized = yes
+			#}
+			#NOT = { has_country_modifier = uncivilized_isolationism }
+			#OR = {
+				#literacy = 0.04
+				#civilization_progress = 0.4
+				#has_country_modifier = educational_reform
+				#civilized = yes
+				#AND = {
+					#literacy = 0.03
+					#has_country_modifier = military_reform
+				#}
+			#}
+		#}
 
-		effect = {
+		#effect = {
 			# Audax Validator "." Ignore_NEXT
-			research_points = -2000
-			random_owned = {
-				limit = { owner = { ai = yes } }
-				owner = {
+			#research_points = -2000
+			#random_owned = {
+				#limit = { owner = { ai = yes } }
+				#owner = {
 					# Audax Validator "." Ignore_NEXT
-					research_points = -6000
-				}
-			}
-			clr_country_flag = lacking_writing_system
-			remove_country_modifier = lacks_writing_system
-		}
-		ai_will_do = { factor = 1 }
-	}
+					#research_points = -6000
+				#}
+			#}
+			#clr_country_flag = lacking_writing_system
+			#remove_country_modifier = lacks_writing_system
+		#}
+		#ai_will_do = { factor = 1 }
+	#}
 
 	request_missionaries = {
 		picture = request_missionaries
@@ -5095,5 +5095,28 @@ political_decisions = {
 
 		ai_will_do = { factor = 1 }
 	}
-
+establish_writing_system = {
+		picture = Writing_System_Africa
+		potential = { has_country_flag = lacking_writing_system }
+		allow = {
+			war = no
+			money = 10000	
+			OR = {
+				has_country_modifier = western_influences
+				has_country_modifier = western_presence
+				civilized = yes	
+				}
+			NOT = { has_country_modifier = uncivilized_isolationism }
+			}
+		effect = {
+			clr_country_flag = lacking_writing_system
+			remove_country_modifier = lacks_writing_system
+			set_country_flag = choose_writing_system
+			set_country_flag = first_writing_group
+			set_country_flag = writing_angery_starter
+			set_country_flag = writing_unciv #Unciv Rebel knower
+			treasury = -10000
+			}
+		ai_will_do = { factor = 1 }
+			}
 }

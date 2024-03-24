@@ -98,6 +98,7 @@
 
 			option = {
 				name = "EVTOPTA3101"
+				plurality = -1
 				random_state = {
 					limit = {
 						NOT = {
@@ -119,6 +120,7 @@
 
 			option = {
 				name = "EVTOPTB3101"
+				plurality = -0.5
 				random_state = {
 					limit = {
 						NOT = {
@@ -953,7 +955,7 @@
 			trigger = {
 				civilized = yes
 				public_meetings = no_meeting
-				plurality = 40
+				NOT = { plurality = 40 }
 				NOT = {
 					average_militancy = 6
 				}
